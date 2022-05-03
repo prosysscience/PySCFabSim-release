@@ -1,0 +1,107 @@
+STNFAM	STN	RULE	FWLRANK	WAKERESRANK	BATCHCRITF	BATCHPER	LTIME	LTUNITS	ULTIME	ULTUNITS	STNCAP	STNQTY	STNGRP	STNFAMSTEP_ACTLIST	STNFAMLOC	PRERULERWL	SETUPGRP
+DE_BE_11	DE_BE_11	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		9.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_12	DE_BE_12	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		7.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_13	DE_BE_13	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min		13.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_48	DE_BE_48	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_50	DE_BE_50	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		10.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_65	DE_BE_65	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_66	DE_BE_66	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min		17.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_67	DE_BE_67	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_BE_69	DE_BE_69	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		3.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_1	DE_FE_1	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		5.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_51	DE_FE_51	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		20.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_53	DE_FE_53	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		5.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_54	DE_FE_54	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		3.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_56	DE_FE_56	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_58	DE_FE_58	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_59	DE_FE_59	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		8.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_62	DE_FE_62	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		17.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_70	DE_FE_70	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_71	DE_FE_71	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		18.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_72	DE_FE_72	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DE_FE_86	DE_FE_86	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		118.0	Dry_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_BE_33	DefMet_BE_33	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_BE_42	DefMet_BE_42	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		1.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_FE_10	DefMet_FE_10	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_FE_106	DefMet_FE_106	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		1.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMEt_FE_118	DefMEt_FE_118	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_FE_34	DefMet_FE_34	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+DefMet_FE_43	DefMet_FE_43	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		5.0	Def_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Delay_32	Delay1	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				0.0	min	0.0	min		400.0	Delay_32	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Delay	no	
+Dielectric_BE_20	Dielectric_BE_20	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_BE_21	Dielectric_BE_21	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		6.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_BE_27	Dielectric_BE_27	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	12.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_BE_28	Dielectric_BE_28	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		3.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_BE_60	Dielectric_BE_60	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	6.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_FE_112	Dielectric_FE_112	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		9.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_FE_130	Dielectric_FE_130	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	4.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_FE_29	Dielectric_FE_29	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		3.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_FE_30	Dielectric_FE_30	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Dielectric_FE_31	Dielectric_FE_31	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		4.0	Dielectric	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_BE_123	Diffusion_BE_123	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		9.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_100	Diffusion_FE_100	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		3.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_101	Diffusion_FE_101	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		10.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_120	Diffusion_FE_120	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		8.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_122	Diffusion_FE_122	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		6.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_125	Diffusion_FE_125	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		5.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_126	Diffusion_FE_126	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		4.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_127	Diffusion_FE_127	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		8.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_44	Diffusion_FE_44	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		7.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Diffusion_FE_94	Diffusion_FE_94	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR		crit_sameroutestep	piece	1.0	min	1.0	min		13.0	Diffusion	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+EPI_36	EPI_36	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+EPI_38	EPI_38	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	1.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Implant_119	Implant_119	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min	2.0	2.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Implant_128	Implant_128	rule_LSSU	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min	2.0	11.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	Implant_Gas
+Implant_132	Implant_132	rule_LSSU	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min	2.0	7.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	Implant_Gas
+Implant_74	Implant_74	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Implant_88	Implant_88	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Implant_90	Implant_90	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min	2.0	2.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Implant_91	Implant_91	rule_LSSU	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min	2.0	7.0	Implant	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	Implant_Gas
+Litho_BE_110	Litho_BE_110	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		23.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_BE_93	Litho_BE_93	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		4.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_BE_99	Litho_BE_99	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		3.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_FE_111	Litho_FE_111	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		20.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_FE_35	Litho_FE_35	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_FE_92	Litho_FE_92	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		26.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_FE_98	Litho_FE_98	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		4.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_REG_BE_63	Litho_REG_BE_63	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		8.0	Litho_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Litho_REG_FE_64	Litho_REG_FE_64	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		12.0	Litho_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoMet_BE_18	LithoMet_BE_18	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		11.0	Litho_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoMet_FE_19	LithoMet_FE_19	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		14.0	Litho_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoTrack_BE_117	LithoTrack_BE_117	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		5.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoTrack_FE_115	LithoTrack_FE_115	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min		41.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoTrack_FE_95	LithoTrack_FE_95	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR	wake_LeastSetupTime			1.0	min	1.0	min		40.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+LithoTrack_FE_96	LithoTrack_FE_96	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	Litho	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_BE_75	Planar_BE_75	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	14.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_FE_76	Planar_FE_76	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_FE_77	Planar_FE_77	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_FE_78	Planar_FE_78	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_FE_79	Planar_FE_79	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	4.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+Planar_FE_80	Planar_FE_80	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Planar	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_BE_2	TF_BE_2	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	4.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_BE_23	TF_BE_23	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	14.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_BE_24	TF_BE_24	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	4.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_BE_26	TF_BE_26	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	13.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_BE_40	TF_BE_40	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	17.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_103	TF_FE_103	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	7.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_104	TF_FE_104	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_113	TF_FE_113	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	3.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_131	TF_FE_131	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	6.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_3	TF_FE_3	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	3.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_FE_5	TF_FE_5	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	3.0	TF	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_Met_FE_45	TF_Met_FE_45	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	TF_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+TF_Met_FE_61	TF_Met_FE_61	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min		2.0	TF_Met	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_14	WE_BE_14	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_16	WE_BE_16	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	8.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_17	WE_BE_17	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_7	WE_BE_7	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	1.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_81	WE_BE_81	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	3.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_82	WE_BE_82	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	9.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_BE_9	WE_BE_9	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_108	WE_FE_108	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	29.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_41	WE_FE_41	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_47	WE_FE_47	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	5.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_8	WE_FE_8	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_83	WE_FE_83	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	6.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_84	WE_FE_84	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	17.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	
+WE_FE_85	WE_FE_85	rule_HotLotFIRST	rank_HP;rank_RSETUP;rank_CR				1.0	min	1.0	min	2.0	2.0	Wet_Etch	Custom_actlist_ASISemiOpersDuringSetupAndAdditionalLoadUnload	Fab	no	

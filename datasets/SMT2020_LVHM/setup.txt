@@ -1,0 +1,14 @@
+CURSETUP	NEWSETUP	STIME	STUNITS	IGNORE
+DE_BE_13_1	DE_BE_13_2	7	min	DE_BE_13
+DE_BE_13_2	DE_BE_13_1	12	min	DE_BE_13
+DE_BE_66_1	DE_BE_66_2	15	min	DE_BE_66
+DE_BE_66_2	DE_BE_66_1	10	min	DE_BE_66
+	SU128_1	72	min	Implant_128
+	SU128_2	72	min	Implant_128
+	SU128_3	72	min	Implant_128
+	SU132_1	60	min	Implant_132
+	SU132_2	60	min	Implant_132
+	SU132_3	60	min	Implant_132
+	SU91_1	80	min	Implant_91
+	SU91_2	80	min	Implant_91
+	SU91_3	80	min	Implant_91

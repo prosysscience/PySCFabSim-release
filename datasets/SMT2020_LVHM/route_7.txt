@@ -1,0 +1,354 @@
+ROUTE	STEP	DESC	STNFAM	PDIST	PTIME	PTIME2	PTUNITS	PTPER	BATCHMN	BATCHMX	SETUP	WHEN	STIME	STUNITS	SVESTN	FORSTEP	BatchInterval	BatchIntUnits	PartInterval	PartIntUnits	RWKSTEP	REWORK	RWKTYPE	StepPercent	STEP_CQT	CQT	CQTUNITS	IGNORE
+r_7	1	004_Diffusion	Diffusion_FE_125	uniform	440.4	22.02	min	per_batch	75	100																		Diffusion
+r_7	2	005_Wet_Etch	WE_FE_84	uniform	1.14	0.06	min	per_piece											0.855	min								Wet_Etch
+r_7	3	006_Def_Met	DefMEt_FE_118	uniform	29.88	1.49	min	per_lot																59				Def_Met
+r_7	4	007_TF_Met	TF_Met_FE_45	uniform	8.514	0.43	min	per_lot																36				TF_Met
+r_7	5	008_Diffusion	Diffusion_FE_127	uniform	437.58	21.88	min	per_batch	100	125																		Diffusion
+r_7	6	009_Def_Met	DefMEt_FE_118	uniform	23.658	1.18	min	per_lot																59				Def_Met
+r_7	7	010_TF_Met	TF_Met_FE_45	uniform	9.804	0.49	min	per_lot																39				TF_Met
+r_7	8	011_Wet_Etch	WE_FE_108	uniform	0.99	0.05	min	per_piece											0.7425	min								Wet_Etch
+r_7	9	012_Wet_Etch	WE_FE_83	uniform	1.038	0.05	min	per_piece											0.7785	min								Wet_Etch
+r_7	10	013_Wet_Etch	WE_FE_84	uniform	0.9	0.05	min	per_piece											0.675	min								Wet_Etch
+r_7	11	014_Litho	LithoTrack_FE_115	uniform	2.172	0.11	min	per_piece																				Litho
+r_7	12	015_Litho	LithoTrack_FE_115	uniform	2.676	0.13	min	per_piece			SU015_7	need	8	min														Litho
+r_7	13	016_Litho	Litho_FE_92	uniform	2.64	0.13	min	per_piece							yes	193												Litho
+r_7	14	017_Litho_Met	LithoMet_FE_19	uniform	28.104	1.41	min	per_lot																100				Litho_Met
+r_7	15	018_Litho_Met	Litho_REG_FE_64	uniform	25.272	1.26	min	per_lot																100				Litho_Met
+r_7	16	019_Def_Met	DefMet_FE_10	uniform	6.876	0.34	min	per_lot																57				Def_Met
+r_7	17	020_Implant	Implant_128	uniform	1.14	0.06	min	per_piece			SU128_3	need							0.855	min								Implant
+r_7	18	021_Dry_Etch	DE_FE_1	uniform	135.234	6.76	min	per_lot																				Dry_Etch
+r_7	19	022_Dry_Etch	DE_FE_86	uniform	162.798	8.14	min	per_lot																				Dry_Etch
+r_7	20	023_Wet_Etch	WE_FE_108	uniform	1.002	0.05	min	per_piece											0.7515	min								Wet_Etch
+r_7	21	024_Wet_Etch	WE_FE_108	uniform	0.978	0.05	min	per_piece											0.7335	min								Wet_Etch
+r_7	22	025_Litho_Met	LithoMet_FE_19	uniform	18.906	0.95	min	per_lot																100				Litho_Met
+r_7	23	026_Def_Met	DefMet_FE_43	uniform	19.374	0.97	min	per_lot																57				Def_Met
+r_7	24	027_Diffusion	Diffusion_FE_44	uniform	349.992	17.5	min	per_batch	100	125																		Diffusion
+r_7	25	028_Def_Met	DefMet_FE_43	uniform	6.372	0.32	min	per_lot																51				Def_Met
+r_7	26	029_Dry_Etch	DE_FE_51	uniform	72.492	3.62	min	per_lot																				Dry_Etch
+r_7	27	030_Dry_Etch	DE_FE_86	uniform	84.336	4.22	min	per_lot																				Dry_Etch
+r_7	28	031_Wet_Etch	WE_FE_108	uniform	0.93	0.05	min	per_piece											0.6975	min								Wet_Etch
+r_7	29	032_Wet_Etch	WE_FE_83	uniform	0.948	0.05	min	per_piece											0.711	min								Wet_Etch
+r_7	30	034_Wet_Etch	WE_FE_84	uniform	1.14	0.06	min	per_piece											0.855	min					31	2	hr	Wet_Etch
+r_7	31	035_Litho	LithoTrack_FE_95	uniform	2.784	0.14	min	per_piece																				Litho
+r_7	32	036_Litho	LithoTrack_FE_115	uniform	1.692	0.08	min	per_piece			SU036_7	need	8	min														Litho
+r_7	33	037_Litho	Litho_FE_92	uniform	2.226	0.11	min	per_piece																				Litho
+r_7	34	038_Litho_Met	LithoMet_FE_19	uniform	16.902	0.85	min	per_lot																30				Litho_Met
+r_7	35	039_Litho_Met	Litho_REG_FE_64	uniform	21.306	1.07	min	per_lot																49				Litho_Met
+r_7	36	041_Dry_Etch	DE_FE_71	uniform	164.082	8.2	min	per_lot																	37	1	hr	Dry_Etch
+r_7	37	042_Wet_Etch	WE_FE_41	uniform	0.906	0.05	min	per_piece											0.6795	min								Wet_Etch
+r_7	38	045_Dry_Etch	DE_FE_71	uniform	80.958	4.05	min	per_lot																				Dry_Etch
+r_7	39	046_Wet_Etch	WE_FE_108	uniform	0.84	0.04	min	per_piece											0.63	min								Wet_Etch
+r_7	40	047_Def_Met	DefMet_FE_43	uniform	9.744	0.49	min	per_lot																53				Def_Met
+r_7	41	048_Delay	Delay_32	uniform	180	9	min	per_lot																				Delay_32
+r_7	42	049_Dry_Etch	DE_FE_54	uniform	97.818	4.89	min	per_lot																				Dry_Etch
+r_7	43	050_Dry_Etch	DE_FE_86	uniform	105.036	5.25	min	per_lot																				Dry_Etch
+r_7	44	051_Wet_Etch	WE_FE_108	uniform	0.792	0.04	min	per_piece											0.594	min								Wet_Etch
+r_7	45	052_Litho_Met	LithoMet_FE_19	uniform	20.67	1.03	min	per_lot																100				Litho_Met
+r_7	46	053_Def_Met	DefMet_FE_34	uniform	25.224	1.26	min	per_lot																56				Def_Met
+r_7	47	054_Delay	Delay_32	uniform	240	12	min	per_lot																				Delay_32
+r_7	48	055_Wet_Etch	WE_FE_8	uniform	1.086	0.05	min	per_piece											0.8145	min								Wet_Etch
+r_7	49	056_Wet_Etch	WE_FE_83	uniform	0.96	0.05	min	per_piece											0.72	min								Wet_Etch
+r_7	50	057_Def_Met	DefMet_FE_43	uniform	29.298	1.46	min	per_lot																56				Def_Met
+r_7	51	058_Dielectric	Dielectric_FE_112	uniform	35.928	1.8	min	per_lot																				Dielectric
+r_7	52	059_Wet_Etch	WE_FE_108	uniform	0.936	0.05	min	per_piece											0.702	min								Wet_Etch
+r_7	53	060_Dielectric	Dielectric_FE_112	uniform	44.94	2.25	min	per_lot																				Dielectric
+r_7	54	061_Wet_Etch	WE_FE_108	uniform	1.08	0.05	min	per_piece											0.81	min								Wet_Etch
+r_7	55	062_Dielectric	Dielectric_FE_112	uniform	33.324	1.67	min	per_lot																				Dielectric
+r_7	56	063_Planar	Planar_FE_79	uniform	77.07	3.85	min	per_lot									53.949	min										Planar
+r_7	57	064_Wet_Etch	WE_FE_108	uniform	1.194	0.06	min	per_piece											0.8955	min								Wet_Etch
+r_7	58	065_Litho	Litho_FE_111	uniform	1.92	0.1	min	per_piece							yes	72												Litho
+r_7	59	066_Litho_Met	LithoMet_FE_19	uniform	24.606	1.23	min	per_lot																100				Litho_Met
+r_7	60	067_Litho_Met	Litho_REG_FE_64	uniform	20.196	1.01	min	per_lot																23				Litho_Met
+r_7	61	068_Implant	Implant_132	uniform	1.05	0.05	min	per_piece			SU132_3	need							0.7875	min								Implant
+r_7	62	069_Dry_Etch	DE_FE_86	uniform	155.718	7.79	min	per_lot																				Dry_Etch
+r_7	63	070_Wet_Etch	WE_FE_108	uniform	1.068	0.05	min	per_piece											0.801	min								Wet_Etch
+r_7	64	071_Wet_Etch	WE_FE_84	uniform	1.128	0.06	min	per_piece											0.846	min								Wet_Etch
+r_7	65	072_Litho	Litho_FE_98	uniform	1.464	0.07	min	per_piece																				Litho
+r_7	66	073_Litho_Met	LithoMet_FE_19	uniform	17.91	0.9	min	per_lot																47				Litho_Met
+r_7	67	074_Litho_Met	Litho_REG_FE_64	uniform	20.634	1.03	min	per_lot													65	1.7	lot	100				Litho_Met
+r_7	68	075_Implant	Implant_128	uniform	0.816	0.04	min	per_piece			SU128_1	need							0.612	min								Implant
+r_7	69	076_Dry_Etch	DE_FE_86	uniform	77.358	3.87	min	per_lot																				Dry_Etch
+r_7	70	077_Wet_Etch	WE_FE_108	uniform	1.08	0.05	min	per_piece											0.81	min								Wet_Etch
+r_7	71	078_Wet_Etch	WE_FE_84	uniform	0.708	0.04	min	per_piece											0.531	min								Wet_Etch
+r_7	72	086_Litho	Litho_FE_111	uniform	2.772	0.14	min	per_piece							yes	87												Litho
+r_7	73	087_Litho_Met	LithoMet_FE_19	uniform	28.422	1.42	min	per_lot																100				Litho_Met
+r_7	74	088_Litho_Met	Litho_REG_FE_64	uniform	23.172	1.16	min	per_lot													72	1	lot	41				Litho_Met
+r_7	75	089_Implant	Implant_132	uniform	1.32	0.07	min	per_piece			SU132_2	need							0.99	min								Implant
+r_7	76	090_Dry_Etch	DE_FE_86	uniform	137.484	6.87	min	per_lot																				Dry_Etch
+r_7	77	091_Wet_Etch	WE_FE_84	uniform	0.912	0.05	min	per_piece											0.684	min								Wet_Etch
+r_7	78	134_Litho	LithoTrack_FE_115	uniform	2.898	0.14	min	per_piece			SU134_7	need	8	min														Litho
+r_7	79	135_Litho	Litho_FE_92	uniform	2.55	0.13	min	per_piece																				Litho
+r_7	80	136_Litho_Met	LithoMet_FE_19	uniform	27.864	1.39	min	per_lot																100				Litho_Met
+r_7	81	137_Litho_Met	Litho_REG_FE_64	uniform	28.926	1.45	min	per_lot																100				Litho_Met
+r_7	82	138_Dry_Etch	DE_FE_71	uniform	170.784	8.54	min	per_lot																				Dry_Etch
+r_7	83	139_Wet_Etch	WE_FE_108	uniform	1.062	0.05	min	per_piece											0.7965	min								Wet_Etch
+r_7	84	140_Wet_Etch	WE_FE_83	uniform	0.9	0.05	min	per_piece											0.675	min								Wet_Etch
+r_7	85	141_Wet_Etch	WE_FE_84	uniform	0.96	0.05	min	per_piece											0.72	min								Wet_Etch
+r_7	86	142_Def_Met	DefMet_FE_43	uniform	8.016	0.4	min	per_lot																50				Def_Met
+r_7	87	158_Litho	Litho_FE_111	uniform	3.168	0.16	min	per_piece							yes	96												Litho
+r_7	88	159_Litho_Met	LithoMet_FE_19	uniform	21.954	1.1	min	per_lot																100				Litho_Met
+r_7	89	160_Litho_Met	Litho_REG_FE_64	uniform	25.278	1.26	min	per_lot																100				Litho_Met
+r_7	90	161_Litho	Litho_FE_35	uniform	2.022	0.1	min	per_piece																				Litho
+r_7	91	162_Implant	Implant_132	uniform	0.924	0.05	min	per_piece			SU132_2	need							0.693	min								Implant
+r_7	92	163_Dry_Etch	DE_FE_86	uniform	165.792	8.29	min	per_lot																				Dry_Etch
+r_7	93	164_Def_Met	DefMet_FE_43	uniform	15.252	0.76	min	per_lot																52				Def_Met
+r_7	94	165_Wet_Etch	WE_FE_108	uniform	1.038	0.05	min	per_piece											0.7785	min								Wet_Etch
+r_7	95	166_Wet_Etch	WE_FE_84	uniform	0.654	0.03	min	per_piece											0.4905	min								Wet_Etch
+r_7	96	167_Litho	Litho_FE_111	uniform	2.01	0.1	min	per_piece							yes	104												Litho
+r_7	97	168_Litho_Met	LithoMet_FE_19	uniform	21.846	1.09	min	per_lot																31				Litho_Met
+r_7	98	169_Litho_Met	Litho_REG_FE_64	uniform	22.506	1.13	min	per_lot																48				Litho_Met
+r_7	99	170_Implant	Implant_132	uniform	1.44	0.07	min	per_piece			SU132_3	need							1.08	min								Implant
+r_7	100	171_Dry_Etch	DE_FE_86	uniform	126.198	6.31	min	per_lot																				Dry_Etch
+r_7	101	172_Wet_Etch	WE_FE_108	uniform	1.158	0.06	min	per_piece											0.8685	min								Wet_Etch
+r_7	102	173_Wet_Etch	WE_FE_84	uniform	1.158	0.06	min	per_piece											0.8685	min								Wet_Etch
+r_7	103	185_Litho	LithoTrack_FE_115	uniform	2.928	0.15	min	per_piece			SU185_7	need	8	min														Litho
+r_7	104	186_Litho	Litho_FE_111	uniform	3.114	0.16	min	per_piece																				Litho
+r_7	105	187_Litho_Met	LithoMet_FE_19	uniform	27.186	1.36	min	per_lot																33				Litho_Met
+r_7	106	188_Litho_Met	Litho_REG_FE_64	uniform	29.478	1.47	min	per_lot																44				Litho_Met
+r_7	107	189_Dry_Etch	DE_FE_51	uniform	126	6.3	min	per_lot																				Dry_Etch
+r_7	108	190_Wet_Etch	WE_FE_108	uniform	0.882	0.04	min	per_piece											0.6615	min								Wet_Etch
+r_7	109	191_Implant	Implant_128	uniform	0.888	0.04	min	per_piece			SU128_2	need							0.666	min								Implant
+r_7	110	192_Dry_Etch	DE_FE_86	uniform	154.458	7.72	min	per_lot																				Dry_Etch
+r_7	111	193_Def_Met	DefMet_FE_43	uniform	13.818	0.69	min	per_lot																54				Def_Met
+r_7	112	194_Wet_Etch	WE_FE_108	uniform	0.882	0.04	min	per_piece											0.6615	min								Wet_Etch
+r_7	113	195_Implant	Implant_128	uniform	1.116	0.06	min	per_piece			SU128_1	need							0.837	min								Implant
+r_7	114	196_Wet_Etch	WE_FE_108	uniform	0.978	0.05	min	per_piece											0.7335	min								Wet_Etch
+r_7	115	197_Implant	Implant_91	uniform	1.236	0.06	min	per_piece			SU91_3	need							0.927	min								Implant
+r_7	116	198_Diffusion	Diffusion_FE_100	uniform	389.094	19.45	min	per_batch	125	150																		Diffusion
+r_7	117	199_TF_Met	TF_Met_FE_61	uniform	7.8	0.39	min	per_lot																33				TF_Met
+r_7	118	200_Def_Met	DefMet_FE_43	uniform	22.704	1.14	min	per_lot																55				Def_Met
+r_7	119	201_Diffusion	Diffusion_FE_122	uniform	522.816	26.14	min	per_batch	125	150																		Diffusion
+r_7	120	203_Wet_Etch	WE_FE_84	uniform	1.098	0.05	min	per_piece											0.8235	min					121	2	hr	Wet_Etch
+r_7	121	204_Litho	LithoTrack_FE_115	uniform	2.778	0.14	min	per_piece																				Litho
+r_7	122	205_Dry_Etch	DE_FE_51	uniform	172.998	8.65	min	per_lot																				Dry_Etch
+r_7	123	206_Implant	Implant_74	uniform	0.822	0.04	min	per_piece											0.6165	min								Implant
+r_7	124	207_Delay	Delay_32	uniform	120	6	min	per_lot																				Delay_32
+r_7	125	208_Implant	Implant_128	uniform	0.978	0.05	min	per_piece			SU128_2	need							0.7335	min								Implant
+r_7	126	209_Def_Met	DefMet_FE_43	uniform	6.234	0.31	min	per_lot																52				Def_Met
+r_7	127	211_Dry_Etch	DE_FE_86	uniform	104.298	5.21	min	per_lot																	128	1	hr	Dry_Etch
+r_7	128	212_Wet_Etch	WE_FE_108	uniform	0.852	0.04	min	per_piece											0.639	min								Wet_Etch
+r_7	129	213_Implant	Implant_91	uniform	0.786	0.04	min	per_piece			SU91_3	need							0.5895	min								Implant
+r_7	130	214_Wet_Etch	WE_FE_108	uniform	0.678	0.03	min	per_piece											0.5085	min								Wet_Etch
+r_7	131	215_Dry_Etch	DE_FE_62	uniform	169.656	8.48	min	per_lot																				Dry_Etch
+r_7	132	216_Dry_Etch	DE_FE_86	uniform	73.506	3.68	min	per_lot																				Dry_Etch
+r_7	133	217_TF_Met	TF_Met_FE_61	uniform	6.168	0.31	min	per_lot																34				TF_Met
+r_7	134	218_Wet_Etch	WE_FE_108	uniform	1.098	0.05	min	per_piece											0.8235	min								Wet_Etch
+r_7	135	219_Delay	Delay_32	uniform	180	9	min	per_lot																				Delay_32
+r_7	136	220_Diffusion	Diffusion_FE_101	uniform	449.862	22.49	min	per_batch	125	150																		Diffusion
+r_7	137	221_Dry_Etch	DE_FE_86	uniform	115.812	5.79	min	per_lot																				Dry_Etch
+r_7	138	222_Implant	Implant_91	uniform	0.936	0.05	min	per_piece			SU91_3	need							0.702	min								Implant
+r_7	139	223_Wet_Etch	WE_FE_84	uniform	0.906	0.05	min	per_piece											0.6795	min								Wet_Etch
+r_7	140	296_Litho	LithoTrack_FE_96	uniform	1.824	0.09	min	per_piece																	145	24	hr	Litho
+r_7	141	297_Diffusion	Diffusion_FE_126	uniform	474.396	23.72	min	per_batch	100	125																		Diffusion
+r_7	142	298_Dielectric	Dielectric_FE_31	uniform	36.396	1.82	min	per_lot																				Dielectric
+r_7	143	299_Planar	Planar_FE_79	uniform	63.48	3.17	min	per_lot									44.436	min										Planar
+r_7	144	300_Wet_Etch	WE_FE_84	uniform	0.666	0.03	min	per_piece											0.4995	min								Wet_Etch
+r_7	145	301_Wet_Etch	WE_FE_108	uniform	1.14	0.06	min	per_piece											0.855	min								Wet_Etch
+r_7	146	303_Delay	Delay_32	uniform	180	9	min	per_lot																				Delay_32
+r_7	147	304_Dry_Etch	DE_FE_62	uniform	145.002	7.25	min	per_lot																				Dry_Etch
+r_7	148	305_Wet_Etch	WE_FE_108	uniform	0.858	0.04	min	per_piece											0.6435	min								Wet_Etch
+r_7	149	306_TF_Met	TF_Met_FE_61	uniform	6.018	0.3	min	per_lot																38				TF_Met
+r_7	150	307_Def_Met	DefMet_FE_10	uniform	29.496	1.47	min	per_lot																55				Def_Met
+r_7	151	308_Delay	Delay_32	uniform	120	6	min	per_lot																				Delay_32
+r_7	152	309_Implant	Implant_128	uniform	0.864	0.04	min	per_piece			SU128_3	need							0.648	min								Implant
+r_7	153	310_Dielectric	Dielectric_FE_112	uniform	50.226	2.51	min	per_lot																				Dielectric
+r_7	154	311_Dry_Etch	DE_FE_59	uniform	69.408	3.47	min	per_lot																				Dry_Etch
+r_7	155	313_Dry_Etch	DE_FE_62	uniform	63.12	3.16	min	per_lot																				Dry_Etch
+r_7	156	314_Implant	Implant_128	uniform	0.93	0.05	min	per_piece			SU128_2	need							0.6975	min								Implant
+r_7	157	315_Dielectric	Dielectric_FE_112	uniform	59.178	2.96	min	per_lot																				Dielectric
+r_7	158	316_Wet_Etch	WE_FE_47	uniform	1.164	0.06	min	per_piece											0.873	min								Wet_Etch
+r_7	159	317_TF_Met	TF_Met_FE_61	uniform	6.342	0.32	min	per_lot																33				TF_Met
+r_7	160	318_Def_Met	DefMet_FE_10	uniform	14.616	0.73	min	per_lot																52				Def_Met
+r_7	161	319_Diffusion	Diffusion_FE_101	uniform	499.44	24.97	min	per_batch	100	125																		Diffusion
+r_7	162	321_Wet_Etch	WE_FE_108	uniform	1.176	0.06	min	per_piece											0.882	min					166	8	hr	Wet_Etch
+r_7	163	322_TF	TF_FE_3	uniform	80.37	4.02	min	per_lot									68.3145	min										TF
+r_7	164	323_Implant	Implant_90	uniform	1.152	0.06	min	per_piece			SU323	need	15	min					0.864	min								Implant
+r_7	165	324_TF	TF_FE_103	uniform	89.232	4.46	min	per_lot									75.8472	min										TF
+r_7	166	325_Diffusion	Diffusion_FE_94	uniform	463.14	23.16	min	per_batch	125	150																		Diffusion
+r_7	167	326_TF	TF_FE_104	uniform	68.07	3.4	min	per_lot									57.8595	min										TF
+r_7	168	327_Implant	Implant_91	uniform	1.38	0.07	min	per_piece			SU91_2	need							1.035	min								Implant
+r_7	169	328_Wet_Etch	WE_FE_47	uniform	0.654	0.03	min	per_piece											0.4905	min								Wet_Etch
+r_7	170	329_TF	TF_FE_131	uniform	85.86	4.29	min	per_lot									72.981	min										TF
+r_7	171	330_Wet_Etch	WE_FE_84	uniform	1.11	0.06	min	per_piece											0.8325	min								Wet_Etch
+r_7	172	331_Litho	LithoTrack_FE_95	uniform	1.704	0.09	min	per_piece																				Litho
+r_7	173	332_Dry_Etch	DE_FE_70	uniform	67.254	3.36	min	per_lot																				Dry_Etch
+r_7	174	333_Wet_Etch	WE_FE_41	uniform	0.87	0.04	min	per_piece											0.6525	min								Wet_Etch
+r_7	175	334_TF_Met	TF_Met_FE_61	uniform	9.582	0.48	min	per_lot																37				TF_Met
+r_7	176	335_Wet_Etch	WE_FE_41	uniform	0.948	0.05	min	per_piece											0.711	min								Wet_Etch
+r_7	177	336_Diffusion	Diffusion_FE_94	uniform	539.346	26.97	min	per_batch	75	100																		Diffusion
+r_7	178	337_Wet_Etch	WE_FE_84	uniform	0.96	0.05	min	per_piece											0.72	min								Wet_Etch
+r_7	179	338_TF	TF_FE_103	uniform	84.204	4.21	min	per_lot									71.5734	min										TF
+r_7	180	339_Wet_Etch	WE_FE_84	uniform	0.624	0.03	min	per_piece											0.468	min								Wet_Etch
+r_7	181	340_Litho	LithoTrack_FE_95	uniform	2.736	0.14	min	per_piece																				Litho
+r_7	182	341_Dry_Etch	DE_FE_70	uniform	71.64	3.58	min	per_lot																				Dry_Etch
+r_7	183	342_Wet_Etch	WE_FE_108	uniform	0.888	0.04	min	per_piece											0.666	min								Wet_Etch
+r_7	184	343_Wet_Etch	WE_FE_84	uniform	0.696	0.03	min	per_piece											0.522	min								Wet_Etch
+r_7	185	384_Litho	LithoTrack_FE_115	uniform	1.872	0.09	min	per_piece																				Litho
+r_7	186	385_Litho	LithoTrack_FE_115	uniform	3.21	0.16	min	per_piece			SU385_7	need	8	min														Litho
+r_7	187	386_Litho	Litho_FE_92	uniform	2.592	0.13	min	per_piece																				Litho
+r_7	188	387_Litho_Met	Litho_REG_FE_64	uniform	26.43	1.32	min	per_lot																10				Litho_Met
+r_7	189	388_Implant	Implant_128	uniform	0.864	0.04	min	per_piece			SU128_2	need							0.648	min								Implant
+r_7	190	389_Diffusion	Diffusion_FE_44	uniform	448.002	22.4	min	per_batch	75	100																		Diffusion
+r_7	191	399_Litho	LithoTrack_FE_115	uniform	1.656	0.08	min	per_piece																				Litho
+r_7	192	400_Litho	LithoTrack_FE_115	uniform	3.252	0.16	min	per_piece			SU400_7	need	8	min														Litho
+r_7	193	401_Litho	Litho_FE_92	uniform	2.346	0.12	min	per_piece							yes	204												Litho
+r_7	194	402_Litho_Met	LithoMet_FE_19	uniform	23.838	1.19	min	per_lot																36				Litho_Met
+r_7	195	403_Litho_Met	Litho_REG_FE_64	uniform	19.452	0.97	min	per_lot																100				Litho_Met
+r_7	196	405_Dry_Etch	DE_FE_72	uniform	62.952	3.15	min	per_lot																				Dry_Etch
+r_7	197	406_Dry_Etch	DE_FE_86	uniform	173.484	8.67	min	per_lot																				Dry_Etch
+r_7	198	407_Dry_Etch	DE_FE_86	uniform	99.75	4.99	min	per_lot																	199	1	hr	Dry_Etch
+r_7	199	408_Wet_Etch	WE_FE_47	uniform	1.026	0.05	min	per_piece											0.7695	min								Wet_Etch
+r_7	200	409_Wet_Etch	WE_FE_83	uniform	0.756	0.04	min	per_piece											0.567	min								Wet_Etch
+r_7	201	410_Wet_Etch	WE_FE_85	uniform	1.164	0.06	min	per_piece											0.873	min								Wet_Etch
+r_7	202	411_Litho	LithoTrack_FE_115	uniform	3.222	0.16	min	per_piece																				Litho
+r_7	203	412_Litho	LithoTrack_FE_115	uniform	2.85	0.14	min	per_piece			SU412_7	need	8	min														Litho
+r_7	204	413_Litho	Litho_FE_92	uniform	3.246	0.16	min	per_piece																				Litho
+r_7	205	414_Litho_Met	LithoMet_FE_19	uniform	16.44	0.82	min	per_lot																100				Litho_Met
+r_7	206	415_Litho_Met	Litho_REG_FE_64	uniform	19.044	0.95	min	per_lot																16				Litho_Met
+r_7	207	417_Dry_Etch	DE_FE_72	uniform	164.814	8.24	min	per_lot																				Dry_Etch
+r_7	208	418_Dry_Etch	DE_FE_86	uniform	87.234	4.36	min	per_lot																				Dry_Etch
+r_7	209	419_Dry_Etch	DE_FE_86	uniform	150.372	7.52	min	per_lot																				Dry_Etch
+r_7	210	420_Wet_Etch	WE_FE_47	uniform	0.69	0.03	min	per_piece											0.5175	min								Wet_Etch
+r_7	211	421_Litho_Met	LithoMet_FE_19	uniform	19.908	1	min	per_lot																100				Litho_Met
+r_7	212	422_TF	TF_FE_113	uniform	79.08	3.95	min	per_lot									67.218	min										TF
+r_7	213	423_Implant	Implant_119	uniform	1.068	0.05	min	per_piece			SU423	need	15	min					0.801	min								Implant
+r_7	214	424_Wet_Etch	WE_FE_47	uniform	1.068	0.05	min	per_piece											0.801	min								Wet_Etch
+r_7	215	425_Def_Met	DefMet_FE_106	uniform	15.558	0.78	min	per_lot																10				Def_Met
+r_7	216	426_Dielectric	Dielectric_FE_130	uniform	49.356	2.47	min	per_lot									44.4204	min										Dielectric
+r_7	217	427_Wet_Etch	WE_FE_41	uniform	1.026	0.05	min	per_piece											0.7695	min								Wet_Etch
+r_7	218	428_Planar	Planar_FE_80	uniform	38.67	1.93	min	per_lot									27.069	min										Planar
+r_7	219	429_Delay	Delay_32	uniform	120	6	min	per_lot																				Delay_32
+r_7	220	430_Dielectric	Dielectric_BE_27	uniform	59.352	2.97	min	per_lot									53.4168	min										Dielectric
+r_7	221	431_Dielectric	Dielectric_BE_60	uniform	49.824	2.49	min	per_lot									44.8416	min										Dielectric
+r_7	222	432_Dielectric	Dielectric_BE_20	uniform	33.636	1.68	min	per_lot									30.2724	min										Dielectric
+r_7	223	433_Dielectric	Dielectric_BE_60	uniform	39.468	1.97	min	per_lot									35.5212	min										Dielectric
+r_7	224	434_TF	TF_BE_26	uniform	76.74	3.84	min	per_lot									65.229	min										TF
+r_7	225	435_Wet_Etch	WE_BE_81	uniform	0.816	0.04	min	per_piece											0.612	min								Wet_Etch
+r_7	226	436_Wet_Etch	WE_BE_82	uniform	1.194	0.06	min	per_piece											0.8955	min								Wet_Etch
+r_7	227	450_Litho	LithoTrack_FE_95	uniform	1.608	0.08	min	per_piece			SU450_7	need	15	min														Litho
+r_7	228	451_Litho	Litho_FE_92	uniform	3.282	0.16	min	per_piece																				Litho
+r_7	229	452_Litho_Met	LithoMet_BE_18	uniform	18.99	0.95	min	per_lot																30				Litho_Met
+r_7	230	453_Litho_Met	Litho_REG_BE_63	uniform	25.344	1.27	min	per_lot																28				Litho_Met
+r_7	231	454_Delay	Delay_32	uniform	180	9	min	per_lot																				Delay_32
+r_7	232	456_Dry_Etch	DE_BE_67	uniform	74.844	3.74	min	per_lot																				Dry_Etch
+r_7	233	457_Wet_Etch	WE_BE_7	uniform	0.69	0.03	min	per_piece											0.5175	min								Wet_Etch
+r_7	234	458_Wet_Etch	WE_BE_14	uniform	0.978	0.05	min	per_piece											0.7335	min								Wet_Etch
+r_7	235	459_Delay	Delay_32	uniform	180	9	min	per_lot																				Delay_32
+r_7	236	460_Dry_Etch	DE_BE_11	uniform	74.646	3.73	min	per_lot																				Dry_Etch
+r_7	237	461_Wet_Etch	WE_BE_17	uniform	1.188	0.06	min	per_piece											0.891	min								Wet_Etch
+r_7	238	462_Litho	LithoTrack_FE_95	uniform	3.246	0.16	min	per_piece																				Litho
+r_7	239	463_Delay	Delay_32	uniform	120	6	min	per_lot																				Delay_32
+r_7	240	464_Dry_Etch	DE_BE_12	uniform	170.046	8.5	min	per_lot																				Dry_Etch
+r_7	241	465_Wet_Etch	WE_BE_16	uniform	0.708	0.04	min	per_piece											0.531	min								Wet_Etch
+r_7	242	467_Wet_Etch	WE_BE_17	uniform	1.02	0.05	min	per_piece											0.765	min					243	10	hr	Wet_Etch
+r_7	243	468_Diffusion	Diffusion_BE_123	uniform	460.578	23.03	min	per_batch	75	100																		Diffusion
+r_7	244	469_Litho_Met	LithoMet_BE_18	uniform	29.58	1.48	min	per_lot																100				Litho_Met
+r_7	245	471_TF	TF_BE_24	uniform	86.934	4.35	min	per_lot									73.8939	min							248	8	hr	TF
+r_7	246	472_Def_Met	DefMet_BE_42	uniform	20.52	1.03	min	per_lot																10				Def_Met
+r_7	247	473_TF	TF_BE_40	uniform	71.286	3.56	min	per_lot									60.5931	min										TF
+r_7	248	474_Wet_Etch	WE_BE_82	uniform	0.606	0.03	min	per_piece											0.4545	min								Wet_Etch
+r_7	249	476_Planar	Planar_BE_75	uniform	65.184	3.26	min	per_lot									45.6288	min							261	24	hr	Planar
+r_7	250	477_Def_Met	DefMet_BE_42	uniform	19.506	0.98	min	per_lot																10				Def_Met
+r_7	251	478_Dielectric	Dielectric_BE_20	uniform	50.862	2.54	min	per_lot									45.7758	min										Dielectric
+r_7	252	479_Def_Met	DefMet_BE_33	uniform	27.054	1.35	min	per_lot																10				Def_Met
+r_7	253	480_Dielectric	Dielectric_BE_60	uniform	38.202	1.91	min	per_lot									34.3818	min										Dielectric
+r_7	254	481_Def_Met	DefMet_BE_33	uniform	15.348	0.77	min	per_lot																10				Def_Met
+r_7	255	482_TF	TF_BE_26	uniform	76.152	3.81	min	per_lot									64.7292	min										TF
+r_7	256	483_Wet_Etch	WE_BE_81	uniform	0.882	0.04	min	per_piece											0.6615	min								Wet_Etch
+r_7	257	484_Wet_Etch	WE_BE_82	uniform	0.63	0.03	min	per_piece											0.4725	min								Wet_Etch
+r_7	258	485_Litho	LithoTrack_FE_95	uniform	1.914	0.1	min	per_piece			SU485_7	need	15	min														Litho
+r_7	259	486_Litho	LithoTrack_BE_117	uniform	1.806	0.09	min	per_piece																				Litho
+r_7	260	487_Litho_Met	LithoMet_BE_18	uniform	27.414	1.37	min	per_lot																24				Litho_Met
+r_7	261	488_Litho_Met	Litho_REG_BE_63	uniform	26.562	1.33	min	per_lot																100				Litho_Met
+r_7	262	490_Dry_Etch	DE_BE_50	uniform	84.348	4.22	min	per_lot																	270	8	hr	Dry_Etch
+r_7	263	491_Wet_Etch	WE_BE_14	uniform	0.984	0.05	min	per_piece											0.738	min								Wet_Etch
+r_7	264	492_Wet_Etch	WE_BE_81	uniform	1.146	0.06	min	per_piece											0.8595	min								Wet_Etch
+r_7	265	493_Wet_Etch	WE_BE_82	uniform	0.606	0.03	min	per_piece											0.4545	min								Wet_Etch
+r_7	266	494_Litho	LithoTrack_FE_95	uniform	1.458	0.07	min	per_piece			SU494_7	need	15	min														Litho
+r_7	267	495_Litho	LithoTrack_BE_117	uniform	2.862	0.14	min	per_piece																				Litho
+r_7	268	496_Wet_Etch	WE_BE_82	uniform	1.17	0.06	min	per_piece											0.8775	min								Wet_Etch
+r_7	269	497_Litho	LithoTrack_FE_95	uniform	2.496	0.12	min	per_piece			SU497_7	need	15	min														Litho
+r_7	270	498_Litho	Litho_BE_99	uniform	2.352	0.12	min	per_piece																				Litho
+r_7	271	499_Delay	Delay_32	uniform	240	12	min	per_lot																				Delay_32
+r_7	272	501_Dry_Etch	DE_BE_67	uniform	86.778	4.34	min	per_lot																				Dry_Etch
+r_7	273	502_Wet_Etch	WE_BE_16	uniform	1.128	0.06	min	per_piece											0.846	min								Wet_Etch
+r_7	274	503_Wet_Etch	WE_BE_14	uniform	0.906	0.05	min	per_piece											0.6795	min								Wet_Etch
+r_7	275	504_Def_Met	DefMet_BE_42	uniform	23.106	1.16	min	per_lot																10				Def_Met
+r_7	276	505_Dry_Etch	DE_BE_11	uniform	114.882	5.74	min	per_lot																				Dry_Etch
+r_7	277	506_Wet_Etch	WE_BE_16	uniform	1.11	0.06	min	per_piece											0.8325	min								Wet_Etch
+r_7	278	507_Litho_Met	LithoMet_BE_18	uniform	26.124	1.31	min	per_lot																23				Litho_Met
+r_7	279	509_TF	TF_BE_23	uniform	86.994	4.35	min	per_lot									73.9449	min										TF
+r_7	280	510_TF	TF_BE_40	uniform	62.82	3.14	min	per_lot									53.397	min							281	2	hr	TF
+r_7	281	511_Planar	Planar_BE_75	uniform	63.618	3.18	min	per_lot									44.5326	min							282	2	hr	Planar
+r_7	282	512_Dielectric	Dielectric_BE_27	uniform	42.708	2.14	min	per_lot									38.4372	min							283	2	hr	Dielectric
+r_7	283	515_Dielectric	Dielectric_BE_60	uniform	54.138	2.71	min	per_lot									48.7242	min										Dielectric
+r_7	284	516_Def_Met	DefMet_BE_33	uniform	26.16	1.31	min	per_lot																10				Def_Met
+r_7	285	517_TF	TF_BE_26	uniform	62.226	3.11	min	per_lot									52.8921	min										TF
+r_7	286	518_Wet_Etch	WE_BE_82	uniform	0.738	0.04	min	per_piece											0.5535	min								Wet_Etch
+r_7	287	519_Litho	LithoTrack_FE_95	uniform	3.078	0.15	min	per_piece			SU519_7	need	15	min														Litho
+r_7	288	520_Litho	Litho_BE_93	uniform	1.8	0.09	min	per_piece																				Litho
+r_7	289	521_Litho_Met	LithoMet_BE_18	uniform	15.54	0.78	min	per_lot																100				Litho_Met
+r_7	290	522_Litho_Met	Litho_REG_BE_63	uniform	19.776	0.99	min	per_lot													288	1	lot	31				Litho_Met
+r_7	291	523_Dry_Etch	DE_BE_50	uniform	173.106	8.66	min	per_lot																				Dry_Etch
+r_7	292	524_Wet_Etch	WE_BE_14	uniform	1.074	0.05	min	per_piece											0.8055	min								Wet_Etch
+r_7	293	525_Wet_Etch	WE_BE_82	uniform	1.17	0.06	min	per_piece											0.8775	min								Wet_Etch
+r_7	294	526_Litho	LithoTrack_FE_95	uniform	1.458	0.07	min	per_piece			SU526_7	need	15	min														Litho
+r_7	295	527_Litho	Litho_BE_93	uniform	2.094	0.1	min	per_piece																				Litho
+r_7	296	528_Litho_Met	LithoMet_BE_18	uniform	15.396	0.77	min	per_lot																38				Litho_Met
+r_7	297	529_Litho_Met	Litho_REG_BE_63	uniform	24.114	1.21	min	per_lot																100				Litho_Met
+r_7	298	531_Dry_Etch	DE_BE_67	uniform	140.334	7.02	min	per_lot																	300	4	hr	Dry_Etch
+r_7	299	532_Wet_Etch	WE_BE_16	uniform	0.606	0.03	min	per_piece											0.4545	min								Wet_Etch
+r_7	300	533_Wet_Etch	WE_BE_14	uniform	0.954	0.05	min	per_piece											0.7155	min					303	4	hr	Wet_Etch
+r_7	301	534_Dry_Etch	DE_BE_11	uniform	77.298	3.86	min	per_lot																				Dry_Etch
+r_7	302	535_Wet_Etch	WE_BE_16	uniform	1.182	0.06	min	per_piece											0.8865	min								Wet_Etch
+r_7	303	536_Litho_Met	LithoMet_BE_18	uniform	26.22	1.31	min	per_lot																100				Litho_Met
+r_7	304	538_TF	TF_BE_23	uniform	80.016	4	min	per_lot									68.0136	min							306	6	hr	TF
+r_7	305	539_TF	TF_BE_40	uniform	69.936	3.5	min	per_lot									59.4456	min										TF
+r_7	306	540_Planar	Planar_BE_75	uniform	72.99	3.65	min	per_lot									51.093	min							307	2	hr	Planar
+r_7	307	541_Dielectric	Dielectric_BE_27	uniform	57.6	2.88	min	per_lot									51.84	min							308	2	hr	Dielectric
+r_7	308	542_Dielectric	Dielectric_BE_21	uniform	37.926	1.9	min	per_lot																				Dielectric
+r_7	309	543_Def_Met	DefMet_BE_33	uniform	26.34	1.32	min	per_lot																10				Def_Met
+r_7	310	544_Wet_Etch	WE_BE_82	uniform	0.702	0.04	min	per_piece											0.5265	min								Wet_Etch
+r_7	311	545_Litho	Litho_BE_110	uniform	2.568	0.13	min	per_piece							yes	316												Litho
+r_7	312	546_Litho_Met	LithoMet_BE_18	uniform	28.89	1.44	min	per_lot																100				Litho_Met
+r_7	313	547_Litho_Met	Litho_REG_BE_63	uniform	15.888	0.79	min	per_lot																30				Litho_Met
+r_7	314	548_Dry_Etch	DE_BE_66	uniform	98.862	4.94	min	per_lot			DE_BE_66_1	need																Dry_Etch
+r_7	315	549_Wet_Etch	WE_BE_9	uniform	1.116	0.06	min	per_piece											0.837	min								Wet_Etch
+r_7	316	590_Litho	Litho_BE_110	uniform	2.61	0.13	min	per_piece																				Litho
+r_7	317	591_Litho_Met	LithoMet_BE_18	uniform	23.4	1.17	min	per_lot																15				Litho_Met
+r_7	318	592_Litho_Met	Litho_REG_BE_63	uniform	16.242	0.81	min	per_lot													316	1.4	lot	42				Litho_Met
+r_7	319	593_Dry_Etch	DE_BE_66	uniform	174.15	8.71	min	per_lot			DE_BE_66_1	need																Dry_Etch
+r_7	320	594_Wet_Etch	WE_BE_9	uniform	0.822	0.04	min	per_piece											0.6165	min								Wet_Etch
+r_7	321	595_Litho	LithoTrack_FE_95	uniform	3.198	0.16	min	per_piece			SU595_7	need	15	min														Litho
+r_7	322	596_Litho	Litho_BE_110	uniform	2.64	0.13	min	per_piece																				Litho
+r_7	323	597_Litho_Met	LithoMet_BE_18	uniform	22.98	1.15	min	per_lot																35				Litho_Met
+r_7	324	598_Litho_Met	Litho_REG_BE_63	uniform	28.8	1.44	min	per_lot																50				Litho_Met
+r_7	325	599_Dry_Etch	DE_BE_65	uniform	81.864	4.09	min	per_lot																				Dry_Etch
+r_7	326	600_Wet_Etch	WE_BE_9	uniform	1.086	0.05	min	per_piece											0.8145	min								Wet_Etch
+r_7	327	602_Dry_Etch	DE_BE_13	uniform	117.504	5.88	min	per_lot			DE_BE_13_1	need													328	1	hr	Dry_Etch
+r_7	328	603_Wet_Etch	WE_BE_16	uniform	1.062	0.05	min	per_piece											0.7965	min								Wet_Etch
+r_7	329	604_Litho_Met	LithoMet_BE_18	uniform	20.802	1.04	min	per_lot																38				Litho_Met
+r_7	330	606_TF	TF_BE_23	uniform	67.878	3.39	min	per_lot									57.6963	min										TF
+r_7	331	607_TF	TF_BE_40	uniform	78.96	3.95	min	per_lot									67.116	min							332	2	hr	TF
+r_7	332	608_Planar	Planar_BE_75	uniform	53.154	2.66	min	per_lot									37.2078	min							333	2	hr	Planar
+r_7	333	609_Dielectric	Dielectric_BE_27	uniform	54.618	2.73	min	per_lot									49.1562	min							334	2	hr	Dielectric
+r_7	334	610_Dielectric	Dielectric_BE_21	uniform	35.874	1.79	min	per_lot																				Dielectric
+r_7	335	611_Def_Met	DefMet_BE_33	uniform	11.838	0.59	min	per_lot																10				Def_Met
+r_7	336	612_Wet_Etch	WE_BE_82	uniform	0.666	0.03	min	per_piece											0.4995	min								Wet_Etch
+r_7	337	638_Litho	LithoTrack_FE_95	uniform	2.748	0.14	min	per_piece			SU638_7	need	15	min														Litho
+r_7	338	639_Litho	Litho_BE_110	uniform	3.096	0.15	min	per_piece																				Litho
+r_7	339	640_Litho_Met	LithoMet_BE_18	uniform	20.622	1.03	min	per_lot																29				Litho_Met
+r_7	340	641_Litho_Met	Litho_REG_BE_63	uniform	28.758	1.44	min	per_lot																23				Litho_Met
+r_7	341	642_Dry_Etch	DE_BE_48	uniform	117.396	5.87	min	per_lot																				Dry_Etch
+r_7	342	643_Wet_Etch	WE_BE_14	uniform	0.774	0.04	min	per_piece											0.5805	min								Wet_Etch
+r_7	343	644_Wet_Etch	WE_BE_16	uniform	1.02	0.05	min	per_piece											0.765	min								Wet_Etch
+r_7	344	645_Litho_Met	LithoMet_BE_18	uniform	20.214	1.01	min	per_lot																42				Litho_Met
+r_7	345	646_TF	TF_BE_2	uniform	63.762	3.19	min	per_lot									54.1977	min										TF
+r_7	346	647_TF	TF_BE_26	uniform	63.534	3.18	min	per_lot									54.0039	min										TF
+r_7	347	648_Wet_Etch	WE_BE_82	uniform	0.786	0.04	min	per_piece											0.5895	min								Wet_Etch
+r_7	348	661_Litho	Litho_BE_110	uniform	2.472	0.12	min	per_piece																				Litho
+r_7	349	662_Litho_Met	LithoMet_BE_18	uniform	25.05	1.25	min	per_lot																36				Litho_Met
+r_7	350	663_Litho_Met	Litho_REG_BE_63	uniform	15.174	0.76	min	per_lot																100				Litho_Met
+r_7	351	664_Dry_Etch	DE_BE_69	uniform	66.462	3.32	min	per_lot																	353	5	hr	Dry_Etch
+r_7	352	665_Delay	Delay_32	uniform	120	6	min	per_lot																				Delay_32
+r_7	353	666_Wet_Etch	WE_BE_17	uniform	0.648	0.03	min	per_piece											0.486	min								Wet_Etch

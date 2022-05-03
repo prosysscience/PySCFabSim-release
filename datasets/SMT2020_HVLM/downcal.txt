@@ -1,0 +1,12 @@
+DOWNCALNAME	DOWNCALTYPE	MTTFDIST	MTTF	MTTFUNITS	MTTRDIST	MTTR	MTTRUNITS	IGNORE
+BREAK_Def_Met	mttf_by_cal	exponential	10080	min	exponential	35.28	min	Def_Met
+BREAK_Dielectric	mttf_by_cal	exponential	10080	min	exponential	604.8	min	Dielectric
+BREAK_Diffusion	mttf_by_cal	exponential	10080	min	exponential	151.2	min	Diffusion
+BREAK_Dry_Etch	mttf_by_cal	exponential	10080	min	exponential	231.84	min	Dry_Etch
+BREAK_Implant	mttf_by_cal	exponential	10080	min	exponential	604.8	min	Implant
+BREAK_Litho	mttf_by_cal	exponential	10080	min	exponential	705.59	min	Litho
+BREAK_Litho_Met	mttf_by_cal	exponential	10080	min	exponential	35.28	min	Litho_Met
+BREAK_Planar	mttf_by_cal	exponential	10080	min	exponential	201.6	min	Planar
+BREAK_TF	mttf_by_cal	exponential	10080	min	exponential	453.6	min	TF
+BREAK_TF_Met	mttf_by_cal	exponential	10080	min	exponential	35.28	min	TF_Met
+BREAK_Wet_Etch	mttf_by_cal	exponential	10080	min	exponential	221.76	min	Wet_Etch

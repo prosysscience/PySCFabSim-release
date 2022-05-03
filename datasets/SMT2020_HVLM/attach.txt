@@ -1,0 +1,304 @@
+CALNAME	CALTYPE	RESTYPE	RESNAME	FOADIST	FOA	FOAUNITS
+BREAK_Def_Met	down	stngrp	Def_Met	exponential	10080	min
+BREAK_Dielectric	down	stngrp	Dielectric	exponential	10080	min
+BREAK_Diffusion	down	stngrp	Diffusion	exponential	10080	min
+BREAK_Dry_Etch	down	stngrp	Dry_Etch	exponential	10080	min
+BREAK_Implant	down	stngrp	Implant	exponential	10080	min
+BREAK_Litho	down	stngrp	Litho	exponential	10080	min
+BREAK_Litho_Met	down	stngrp	Litho_Met	exponential	10080	min
+BREAK_Planar	down	stngrp	Planar	exponential	10080	min
+BREAK_TF	down	stngrp	TF	exponential	10080	min
+BREAK_TF_Met	down	stngrp	TF_Met	exponential	10080	min
+BREAK_Wet_Etch	down	stngrp	Wet_Etch	exponential	10080	min
+DefMet_BE_33_MN	pm	stnfam	DefMet_BE_33	constant	27.3	day
+DefMet_BE_33_QT	pm	stnfam	DefMet_BE_33	constant	82.8	day
+DefMet_BE_42_MN	pm	stnfam	DefMet_BE_42	constant	27	day
+DefMet_BE_42_QT	pm	stnfam	DefMet_BE_42	constant	81.9	day
+DefMet_FE_10_MN	pm	stnfam	DefMet_FE_10	constant	33.3	day
+DefMet_FE_10_QT	pm	stnfam	DefMet_FE_10	constant	101	day
+DefMet_FE_106_MN	pm	stnfam	DefMet_FE_106	constant	27.3	day
+DefMet_FE_106_QT	pm	stnfam	DefMet_FE_106	constant	82.8	day
+DefMEt_FE_118_MN	pm	stnfam	DefMEt_FE_118	constant	27.3	day
+DefMEt_FE_118_QT	pm	stnfam	DefMEt_FE_118	constant	82.8	day
+DefMet_FE_34_MN	pm	stnfam	DefMet_FE_34	constant	30.6	day
+DefMet_FE_34_QT	pm	stnfam	DefMet_FE_34	constant	92.8	day
+DefMet_FE_43_MN	pm	stnfam	DefMet_FE_43	constant	29.4	day
+DefMet_FE_43_QT	pm	stnfam	DefMet_FE_43	constant	89.2	day
+Diffusion_BE_123_MN	pm	stnfam	Diffusion_BE_123	constant	28.5	day
+Diffusion_BE_123_QT	pm	stnfam	Diffusion_BE_123	constant	86.5	day
+Diffusion_FE_100_MN	pm	stnfam	Diffusion_FE_100	constant	26.1	day
+Diffusion_FE_100_QT	pm	stnfam	Diffusion_FE_100	constant	79.2	day
+Diffusion_FE_101_MN	pm	stnfam	Diffusion_FE_101	constant	31.5	day
+Diffusion_FE_101_QT	pm	stnfam	Diffusion_FE_101	constant	95.6	day
+Diffusion_FE_120_MN	pm	stnfam	Diffusion_FE_120	constant	28.2	day
+Diffusion_FE_120_QT	pm	stnfam	Diffusion_FE_120	constant	85.5	day
+Diffusion_FE_122_MN	pm	stnfam	Diffusion_FE_122	constant	29.1	day
+Diffusion_FE_122_QT	pm	stnfam	Diffusion_FE_122	constant	88.3	day
+Diffusion_FE_125_MN	pm	stnfam	Diffusion_FE_125	constant	30.9	day
+Diffusion_FE_125_QT	pm	stnfam	Diffusion_FE_125	constant	93.7	day
+Diffusion_FE_126_MN	pm	stnfam	Diffusion_FE_126	constant	26.4	day
+Diffusion_FE_126_QT	pm	stnfam	Diffusion_FE_126	constant	80.1	day
+Diffusion_FE_127_MN	pm	stnfam	Diffusion_FE_127	constant	29.4	day
+Diffusion_FE_127_QT	pm	stnfam	Diffusion_FE_127	constant	89.2	day
+Diffusion_FE_44_MN	pm	stnfam	Diffusion_FE_44	constant	29.4	day
+Diffusion_FE_44_QT	pm	stnfam	Diffusion_FE_44	constant	89.2	day
+Diffusion_FE_94_MN	pm	stnfam	Diffusion_FE_94	constant	30.9	day
+Diffusion_FE_94_QT	pm	stnfam	Diffusion_FE_94	constant	93.7	day
+Litho_BE_110_WK	pm	stnfam	Litho_BE_110	constant	6.9	day
+Litho_BE_110_MN	pm	stnfam	Litho_BE_110	constant	29.4	day
+Litho_BE_110_QT	pm	stnfam	Litho_BE_110	constant	89.2	day
+Litho_BE_93_WK	pm	stnfam	Litho_BE_93	constant	7.6	day
+Litho_BE_93_MN	pm	stnfam	Litho_BE_93	constant	32.4	day
+Litho_BE_93_QT	pm	stnfam	Litho_BE_93	constant	98.3	day
+Litho_BE_99_WK	pm	stnfam	Litho_BE_99	constant	6.8	day
+Litho_BE_99_MN	pm	stnfam	Litho_BE_99	constant	29.1	day
+Litho_BE_99_QT	pm	stnfam	Litho_BE_99	constant	88.3	day
+Litho_FE_111_WK	pm	stnfam	Litho_FE_111	constant	6.8	day
+Litho_FE_111_MN	pm	stnfam	Litho_FE_111	constant	29.1	day
+Litho_FE_111_QT	pm	stnfam	Litho_FE_111	constant	88.3	day
+Litho_FE_35_WK	pm	stnfam	Litho_FE_35	constant	7.6	day
+Litho_FE_35_MN	pm	stnfam	Litho_FE_35	constant	32.4	day
+Litho_FE_35_QT	pm	stnfam	Litho_FE_35	constant	98.3	day
+Litho_FE_92_WK	pm	stnfam	Litho_FE_92	constant	6.9	day
+Litho_FE_92_MN	pm	stnfam	Litho_FE_92	constant	29.4	day
+Litho_FE_92_QT	pm	stnfam	Litho_FE_92	constant	89.2	day
+Litho_FE_98_WK	pm	stnfam	Litho_FE_98	constant	7.5	day
+Litho_FE_98_MN	pm	stnfam	Litho_FE_98	constant	32.1	day
+Litho_FE_98_QT	pm	stnfam	Litho_FE_98	constant	97.4	day
+Litho_REG_BE_63_MN	pm	stnfam	Litho_REG_BE_63	constant	29.7	day
+Litho_REG_BE_63_QT	pm	stnfam	Litho_REG_BE_63	constant	90.1	day
+Litho_REG_FE_64_MN	pm	stnfam	Litho_REG_FE_64	constant	30.3	day
+Litho_REG_FE_64_QT	pm	stnfam	Litho_REG_FE_64	constant	91.9	day
+LithoMet_BE_18_MN	pm	stnfam	LithoMet_BE_18	constant	30.6	day
+LithoMet_BE_18_QT	pm	stnfam	LithoMet_BE_18	constant	92.8	day
+LithoMet_FE_19_MN	pm	stnfam	LithoMet_FE_19	constant	29.7	day
+LithoMet_FE_19_QT	pm	stnfam	LithoMet_FE_19	constant	90.1	day
+LithoTrack_BE_117_WK	pm	stnfam	LithoTrack_BE_117	constant	7.1	day
+LithoTrack_BE_117_MN	pm	stnfam	LithoTrack_BE_117	constant	30.6	day
+LithoTrack_BE_117_QT	pm	stnfam	LithoTrack_BE_117	constant	92.8	day
+LithoTrack_FE_115_WK	pm	stnfam	LithoTrack_FE_115	constant	7.1	day
+LithoTrack_FE_115_MN	pm	stnfam	LithoTrack_FE_115	constant	30.3	day
+LithoTrack_FE_115_QT	pm	stnfam	LithoTrack_FE_115	constant	91.9	day
+LithoTrack_FE_95_WK	pm	stnfam	LithoTrack_FE_95	constant	7.1	day
+LithoTrack_FE_95_MN	pm	stnfam	LithoTrack_FE_95	constant	30.3	day
+LithoTrack_FE_95_QT	pm	stnfam	LithoTrack_FE_95	constant	91.9	day
+LithoTrack_FE_96_WK	pm	stnfam	LithoTrack_FE_96	constant	6.5	day
+LithoTrack_FE_96_MN	pm	stnfam	LithoTrack_FE_96	constant	27.9	day
+LithoTrack_FE_96_QT	pm	stnfam	LithoTrack_FE_96	constant	84.6	day
+TF_Met_FE_45_MN	pm	stnfam	TF_Met_FE_45	constant	26.1	day
+TF_Met_FE_45_QT	pm	stnfam	TF_Met_FE_45	constant	79.2	day
+TF_Met_FE_61_MN	pm	stnfam	TF_Met_FE_61	constant	33.9	day
+TF_Met_FE_61_QT	pm	stnfam	TF_Met_FE_61	constant	102.8	day
+DE_BE_11_WK	pm	stnfam	DE_BE_11	constant	1880	
+DE_BE_11_MN	pm	stnfam	DE_BE_11	constant	8178	
+DE_BE_11_QT	pm	stnfam	DE_BE_11	constant	24534	
+DE_BE_12_WK	pm	stnfam	DE_BE_12	constant	1100	
+DE_BE_12_MN	pm	stnfam	DE_BE_12	constant	4730	
+DE_BE_12_QT	pm	stnfam	DE_BE_12	constant	14190	
+DE_BE_13_WK	pm	stnfam	DE_BE_13	constant	1905	
+DE_BE_13_MN	pm	stnfam	DE_BE_13	constant	8238	
+DE_BE_13_QT	pm	stnfam	DE_BE_13	constant	24714	
+DE_BE_48_WK	pm	stnfam	DE_BE_48	constant	1560	
+DE_BE_48_MN	pm	stnfam	DE_BE_48	constant	6760	
+DE_BE_48_QT	pm	stnfam	DE_BE_48	constant	20280	
+DE_BE_50_WK	pm	stnfam	DE_BE_50	constant	1667	
+DE_BE_50_MN	pm	stnfam	DE_BE_50	constant	7222	
+DE_BE_50_QT	pm	stnfam	DE_BE_50	constant	21667	
+DE_BE_65_WK	pm	stnfam	DE_BE_65	constant	1765	
+DE_BE_65_MN	pm	stnfam	DE_BE_65	constant	7647	
+DE_BE_65_QT	pm	stnfam	DE_BE_65	constant	22941	
+DE_BE_66_WK	pm	stnfam	DE_BE_66	constant	1579	
+DE_BE_66_MN	pm	stnfam	DE_BE_66	constant	6842	
+DE_BE_66_QT	pm	stnfam	DE_BE_66	constant	20526	
+DE_BE_67_WK	pm	stnfam	DE_BE_67	constant	1980	
+DE_BE_67_MN	pm	stnfam	DE_BE_67	constant	8613	
+DE_BE_67_QT	pm	stnfam	DE_BE_67	constant	25839	
+DE_BE_69_WK	pm	stnfam	DE_BE_69	constant	2700	
+DE_BE_69_MN	pm	stnfam	DE_BE_69	constant	11880	
+DE_BE_69_QT	pm	stnfam	DE_BE_69	constant	35640	
+DE_FE_1_WK	pm	stnfam	DE_FE_1	constant	1529	
+DE_FE_1_MN	pm	stnfam	DE_FE_1	constant	6573	
+DE_FE_1_QT	pm	stnfam	DE_FE_1	constant	19719	
+DE_FE_51_WK	pm	stnfam	DE_FE_51	constant	1579	
+DE_FE_51_MN	pm	stnfam	DE_FE_51	constant	6842	
+DE_FE_51_QT	pm	stnfam	DE_FE_51	constant	20526	
+DE_FE_53_WK	pm	stnfam	DE_FE_53	constant	970	
+DE_FE_53_MN	pm	stnfam	DE_FE_53	constant	4268	
+DE_FE_53_QT	pm	stnfam	DE_FE_53	constant	12804	
+DE_FE_54_WK	pm	stnfam	DE_FE_54	constant	1980	
+DE_FE_54_MN	pm	stnfam	DE_FE_54	constant	8514	
+DE_FE_54_QT	pm	stnfam	DE_FE_54	constant	25542	
+DE_FE_56_WK	pm	stnfam	DE_FE_56	constant	2550	
+DE_FE_56_MN	pm	stnfam	DE_FE_56	constant	11220	
+DE_FE_56_QT	pm	stnfam	DE_FE_56	constant	33660	
+DE_FE_58_WK	pm	stnfam	DE_FE_58	constant	1534	
+DE_FE_58_MN	pm	stnfam	DE_FE_58	constant	6746	
+DE_FE_58_QT	pm	stnfam	DE_FE_58	constant	20240	
+DE_FE_59_WK	pm	stnfam	DE_FE_59	constant	1584	
+DE_FE_59_MN	pm	stnfam	DE_FE_59	constant	6840	
+DE_FE_59_QT	pm	stnfam	DE_FE_59	constant	20520	
+DE_FE_62_WK	pm	stnfam	DE_FE_62	constant	1415	
+DE_FE_62_MN	pm	stnfam	DE_FE_62	constant	6152	
+DE_FE_62_QT	pm	stnfam	DE_FE_62	constant	18457	
+DE_FE_70_WK	pm	stnfam	DE_FE_70	constant	2019	
+DE_FE_70_MN	pm	stnfam	DE_FE_70	constant	8723	
+DE_FE_70_QT	pm	stnfam	DE_FE_70	constant	26169	
+DE_FE_71_WK	pm	stnfam	DE_FE_71	constant	1415	
+DE_FE_71_MN	pm	stnfam	DE_FE_71	constant	6117	
+DE_FE_71_QT	pm	stnfam	DE_FE_71	constant	18351	
+DE_FE_72_WK	pm	stnfam	DE_FE_72	constant	2222	
+DE_FE_72_MN	pm	stnfam	DE_FE_72	constant	9667	
+DE_FE_72_QT	pm	stnfam	DE_FE_72	constant	29000	
+DE_FE_86_WK	pm	stnfam	DE_FE_86	constant	1519	
+DE_FE_86_MN	pm	stnfam	DE_FE_86	constant	6578	
+DE_FE_86_QT	pm	stnfam	DE_FE_86	constant	19733	
+Dielectric_BE_20_WK	pm	stnfam	Dielectric_BE_20	constant	4200	
+Dielectric_BE_20_MN	pm	stnfam	Dielectric_BE_20	constant	18270	
+Dielectric_BE_20_QT	pm	stnfam	Dielectric_BE_20	constant	54810	
+Dielectric_BE_21_WK	pm	stnfam	Dielectric_BE_21	constant	4594	
+Dielectric_BE_21_MN	pm	stnfam	Dielectric_BE_21	constant	19950	
+Dielectric_BE_21_QT	pm	stnfam	Dielectric_BE_21	constant	59850	
+Dielectric_BE_27_WK	pm	stnfam	Dielectric_BE_27	constant	4000	
+Dielectric_BE_27_MN	pm	stnfam	Dielectric_BE_27	constant	17333	
+Dielectric_BE_27_QT	pm	stnfam	Dielectric_BE_27	constant	52000	
+Dielectric_BE_28_WK	pm	stnfam	Dielectric_BE_28	constant	4163	
+Dielectric_BE_28_MN	pm	stnfam	Dielectric_BE_28	constant	18038	
+Dielectric_BE_28_QT	pm	stnfam	Dielectric_BE_28	constant	54113	
+Dielectric_BE_60_WK	pm	stnfam	Dielectric_BE_60	constant	3900	
+Dielectric_BE_60_MN	pm	stnfam	Dielectric_BE_60	constant	16900	
+Dielectric_BE_60_QT	pm	stnfam	Dielectric_BE_60	constant	50700	
+Dielectric_FE_112_WK	pm	stnfam	Dielectric_FE_112	constant	3920	
+Dielectric_FE_112_MN	pm	stnfam	Dielectric_FE_112	constant	16954	
+Dielectric_FE_112_QT	pm	stnfam	Dielectric_FE_112	constant	50862	
+Dielectric_FE_130_WK	pm	stnfam	Dielectric_FE_130	constant	3563	
+Dielectric_FE_130_MN	pm	stnfam	Dielectric_FE_130	constant	15438	
+Dielectric_FE_130_QT	pm	stnfam	Dielectric_FE_130	constant	46313	
+Dielectric_FE_29_WK	pm	stnfam	Dielectric_FE_29	constant	2933	
+Dielectric_FE_29_MN	pm	stnfam	Dielectric_FE_29	constant	12613	
+Dielectric_FE_29_QT	pm	stnfam	Dielectric_FE_29	constant	37840	
+Dielectric_FE_30_WK	pm	stnfam	Dielectric_FE_30	constant	5600	
+Dielectric_FE_30_MN	pm	stnfam	Dielectric_FE_30	constant	24080	
+Dielectric_FE_30_QT	pm	stnfam	Dielectric_FE_30	constant	72240	
+Dielectric_FE_31_WK	pm	stnfam	Dielectric_FE_31	constant	3713	
+Dielectric_FE_31_MN	pm	stnfam	Dielectric_FE_31	constant	16088	
+Dielectric_FE_31_QT	pm	stnfam	Dielectric_FE_31	constant	48263	
+EPI_36_WK	pm	stnfam	EPI_36	constant	2700	
+EPI_36_MN	pm	stnfam	EPI_36	constant	11880	
+EPI_36_QT	pm	stnfam	EPI_36	constant	35640	
+EPI_38_WK	pm	stnfam	EPI_38	constant	4250	
+EPI_38_MN	pm	stnfam	EPI_38	constant	18700	
+EPI_38_QT	pm	stnfam	EPI_38	constant	56100	
+Implant_119_WK	pm	stnfam	Implant_119	constant	4450	
+Implant_119_MN	pm	stnfam	Implant_119	constant	19135	
+Implant_119_QT	pm	stnfam	Implant_119	constant	57405	
+Implant_128_WK	pm	stnfam	Implant_128	constant	8000	
+Implant_128_MN	pm	stnfam	Implant_128	constant	34700	
+Implant_128_QT	pm	stnfam	Implant_128	constant	104100	
+Implant_132_WK	pm	stnfam	Implant_132	constant	6806	
+Implant_132_MN	pm	stnfam	Implant_132	constant	29453	
+Implant_132_QT	pm	stnfam	Implant_132	constant	88358	
+Implant_74_WK	pm	stnfam	Implant_74	constant	2250	
+Implant_74_MN	pm	stnfam	Implant_74	constant	9900	
+Implant_74_QT	pm	stnfam	Implant_74	constant	29700	
+Implant_88_WK	pm	stnfam	Implant_88	constant	4600	
+Implant_88_MN	pm	stnfam	Implant_88	constant	19780	
+Implant_88_QT	pm	stnfam	Implant_88	constant	59340	
+Implant_90_WK	pm	stnfam	Implant_90	constant	4650	
+Implant_90_MN	pm	stnfam	Implant_90	constant	19995	
+Implant_90_QT	pm	stnfam	Implant_90	constant	59985	
+Implant_91_WK	pm	stnfam	Implant_91	constant	6134	
+Implant_91_MN	pm	stnfam	Implant_91	constant	26526	
+Implant_91_QT	pm	stnfam	Implant_91	constant	79580	
+Planar_BE_75_WK	pm	stnfam	Planar_BE_75	constant	3185	
+Planar_BE_75_MN	pm	stnfam	Planar_BE_75	constant	13818	
+Planar_BE_75_QT	pm	stnfam	Planar_BE_75	constant	41454	
+Planar_FE_76_WK	pm	stnfam	Planar_FE_76	constant	3733	
+Planar_FE_76_MN	pm	stnfam	Planar_FE_76	constant	16053	
+Planar_FE_76_QT	pm	stnfam	Planar_FE_76	constant	48160	
+Planar_FE_77_WK	pm	stnfam	Planar_FE_77	constant	4700	
+Planar_FE_77_MN	pm	stnfam	Planar_FE_77	constant	20210	
+Planar_FE_77_QT	pm	stnfam	Planar_FE_77	constant	60630	
+Planar_FE_78_WK	pm	stnfam	Planar_FE_78	constant	2600	
+Planar_FE_78_MN	pm	stnfam	Planar_FE_78	constant	11440	
+Planar_FE_78_QT	pm	stnfam	Planar_FE_78	constant	34320	
+Planar_FE_79_WK	pm	stnfam	Planar_FE_79	constant	3090	
+Planar_FE_79_MN	pm	stnfam	Planar_FE_79	constant	13390	
+Planar_FE_79_QT	pm	stnfam	Planar_FE_79	constant	40170	
+Planar_FE_80_WK	pm	stnfam	Planar_FE_80	constant	2375	
+Planar_FE_80_MN	pm	stnfam	Planar_FE_80	constant	10450	
+Planar_FE_80_QT	pm	stnfam	Planar_FE_80	constant	31350	
+TF_BE_2_WK	pm	stnfam	TF_BE_2	constant	2750	
+TF_BE_2_MN	pm	stnfam	TF_BE_2	constant	11825	
+TF_BE_2_QT	pm	stnfam	TF_BE_2	constant	35475	
+TF_BE_23_WK	pm	stnfam	TF_BE_23	constant	2808	
+TF_BE_23_MN	pm	stnfam	TF_BE_23	constant	12150	
+TF_BE_23_QT	pm	stnfam	TF_BE_23	constant	36452	
+TF_BE_24_WK	pm	stnfam	TF_BE_24	constant	1840	
+TF_BE_24_MN	pm	stnfam	TF_BE_24	constant	7912	
+TF_BE_24_QT	pm	stnfam	TF_BE_24	constant	23736	
+TF_BE_26_WK	pm	stnfam	TF_BE_26	constant	2910	
+TF_BE_26_MN	pm	stnfam	TF_BE_26	constant	12610	
+TF_BE_26_QT	pm	stnfam	TF_BE_26	constant	37830	
+TF_BE_40_WK	pm	stnfam	TF_BE_40	constant	2681	
+TF_BE_40_MN	pm	stnfam	TF_BE_40	constant	11633	
+TF_BE_40_QT	pm	stnfam	TF_BE_40	constant	34898	
+TF_FE_103_WK	pm	stnfam	TF_FE_103	constant	2425	
+TF_FE_103_MN	pm	stnfam	TF_FE_103	constant	10428	
+TF_FE_103_QT	pm	stnfam	TF_FE_103	constant	31283	
+TF_FE_104_WK	pm	stnfam	TF_FE_104	constant	2880	
+TF_FE_104_MN	pm	stnfam	TF_FE_104	constant	12480	
+TF_FE_104_QT	pm	stnfam	TF_FE_104	constant	37440	
+TF_FE_113_WK	pm	stnfam	TF_FE_113	constant	2825	
+TF_FE_113_MN	pm	stnfam	TF_FE_113	constant	12430	
+TF_FE_113_QT	pm	stnfam	TF_FE_113	constant	37290	
+TF_FE_131_WK	pm	stnfam	TF_FE_131	constant	2550	
+TF_FE_131_MN	pm	stnfam	TF_FE_131	constant	11050	
+TF_FE_131_QT	pm	stnfam	TF_FE_131	constant	33150	
+TF_FE_3_WK	pm	stnfam	TF_FE_3	constant	2175	
+TF_FE_3_MN	pm	stnfam	TF_FE_3	constant	9570	
+TF_FE_3_QT	pm	stnfam	TF_FE_3	constant	28710	
+TF_FE_5_WK	pm	stnfam	TF_FE_5	constant	2425	
+TF_FE_5_MN	pm	stnfam	TF_FE_5	constant	10428	
+TF_FE_5_QT	pm	stnfam	TF_FE_5	constant	31283	
+WE_BE_14_WK	pm	stnfam	WE_BE_14	constant	9800	
+WE_BE_14_MN	pm	stnfam	WE_BE_14	constant	42532	
+WE_BE_14_QT	pm	stnfam	WE_BE_14	constant	127596	
+WE_BE_16_WK	pm	stnfam	WE_BE_16	constant	10028	
+WE_BE_16_MN	pm	stnfam	WE_BE_16	constant	43489	
+WE_BE_16_QT	pm	stnfam	WE_BE_16	constant	130466	
+WE_BE_17_WK	pm	stnfam	WE_BE_17	constant	11100	
+WE_BE_17_MN	pm	stnfam	WE_BE_17	constant	48285	
+WE_BE_17_QT	pm	stnfam	WE_BE_17	constant	144855	
+WE_BE_7_WK	pm	stnfam	WE_BE_7	constant	4350	
+WE_BE_7_MN	pm	stnfam	WE_BE_7	constant	19140	
+WE_BE_7_QT	pm	stnfam	WE_BE_7	constant	57420	
+WE_BE_81_WK	pm	stnfam	WE_BE_81	constant	8166	
+WE_BE_81_MN	pm	stnfam	WE_BE_81	constant	35280	
+WE_BE_81_QT	pm	stnfam	WE_BE_81	constant	105840	
+WE_BE_82_WK	pm	stnfam	WE_BE_82	constant	11400	
+WE_BE_82_MN	pm	stnfam	WE_BE_82	constant	49400	
+WE_BE_82_QT	pm	stnfam	WE_BE_82	constant	148200	
+WE_BE_9_WK	pm	stnfam	WE_BE_9	constant	9300	
+WE_BE_9_MN	pm	stnfam	WE_BE_9	constant	40256	
+WE_BE_9_QT	pm	stnfam	WE_BE_9	constant	120767	
+WE_FE_108_WK	pm	stnfam	WE_FE_108	constant	11143	
+WE_FE_108_MN	pm	stnfam	WE_FE_108	constant	48286	
+WE_FE_108_QT	pm	stnfam	WE_FE_108	constant	144857	
+WE_FE_41_WK	pm	stnfam	WE_FE_41	constant	12480	
+WE_FE_41_MN	pm	stnfam	WE_FE_41	constant	54080	
+WE_FE_41_QT	pm	stnfam	WE_FE_41	constant	162240	
+WE_FE_47_WK	pm	stnfam	WE_FE_47	constant	9625	
+WE_FE_47_MN	pm	stnfam	WE_FE_47	constant	41650	
+WE_FE_47_QT	pm	stnfam	WE_FE_47	constant	124950	
+WE_FE_8_WK	pm	stnfam	WE_FE_8	constant	11000	
+WE_FE_8_MN	pm	stnfam	WE_FE_8	constant	47850	
+WE_FE_8_QT	pm	stnfam	WE_FE_8	constant	143550	
+WE_FE_83_WK	pm	stnfam	WE_FE_83	constant	10515	
+WE_FE_83_MN	pm	stnfam	WE_FE_83	constant	45605	
+WE_FE_83_QT	pm	stnfam	WE_FE_83	constant	136817	
+WE_FE_84_WK	pm	stnfam	WE_FE_84	constant	11050	
+WE_FE_84_MN	pm	stnfam	WE_FE_84	constant	47883	
+WE_FE_84_QT	pm	stnfam	WE_FE_84	constant	143650	
+WE_FE_85_WK	pm	stnfam	WE_FE_85	constant	6675	
+WE_FE_85_MN	pm	stnfam	WE_FE_85	constant	28925	
+WE_FE_85_QT	pm	stnfam	WE_FE_85	constant	86775	

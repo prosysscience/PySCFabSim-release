@@ -1,0 +1,22 @@
+LOT	PART	PRIOR	PIECES	START	RDIST	REPEAT	RUNITS	RPT#	LOTSPERRPT	DUE	ORDER	HOTLOT
+Lot_1	part_1	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/19/18 18:41:46	O_Lot_1	no
+Lot_2	part_2	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/22/18 11:05:59	O_Lot_2	no
+Lot_3	part_3	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/26/18 08:27:35	O_Lot_3	no
+Lot_4	part_4	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/02/18 04:30:02	O_Lot_4	no
+Lot_5	part_5	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	01/24/18 18:49:41	O_Lot_5	no
+Lot_6	part_6	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	01/30/18 23:03:00	O_Lot_6	no
+Lot_7	part_7	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/05/18 00:53:39	O_Lot_7	no
+Lot_8	part_8	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/07/18 22:42:05	O_Lot_8	no
+Lot_9	part_9	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/09/18 00:24:20	O_Lot_9	no
+Lot_10	part_10	10	25	01/01/18 00:00:00	constant	258.46	min	200000	1	02/10/18 02:18:05	O_Lot_10	no
+HotLot_1	part_1	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	02/03/18 22:41:51	O_HotLot_1	no
+HotLot_2	part_2	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	02/06/18 05:43:47	O_HotLot_2	no
+HotLot_3	part_3	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	02/08/18 07:05:01	O_HotLot_3	no
+HotLot_4	part_4	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/24/18 01:49:09	O_HotLot_4	no
+HotLot_5	part_5	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/17/18 20:54:20	O_HotLot_5	no
+HotLot_6	part_6	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/21/18 22:30:42	O_HotLot_6	no
+HotLot_7	part_7	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/25/18 00:45:18	O_HotLot_7	no
+HotLot_8	part_8	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/26/18 09:57:25	O_HotLot_8	no
+HotLot_9	part_9	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/27/18 18:09:27	O_HotLot_9	no
+HotLot_10	part_10	20	25	01/01/18 00:00:00	constant	10080	min	20000	1	01/28/18 18:30:14	O_HotLot_10	no
+SuperHotLot_3	part_3	30	25	01/01/18 00:00:00	constant	28258.37	min	2000	1	02/08/18 07:05:01	O_SuperHotLot_3	no

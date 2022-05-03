@@ -1,0 +1,3 @@
+PARTGRP	PARTFAM	PART	ROUTEFILE	ROUTE
+Saleable	product_3	part_3	route_3.txt	r_3
+Saleable	product_4	part_4	route_4.txt	r_4

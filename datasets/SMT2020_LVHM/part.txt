@@ -1,0 +1,11 @@
+PARTGRP	PARTFAM	PART	ROUTEFILE	ROUTE
+Saleable	product_1	part_1	route_1.txt	r_1
+Saleable	product_2	part_2	route_2.txt	r_2
+Saleable	product_3	part_3	route_3.txt	r_3
+Saleable	product_4	part_4	route_4.txt	r_4
+Saleable	product_5	part_5	route_5.txt	r_5
+Saleable	product_6	part_6	route_6.txt	r_6
+Saleable	product_7	part_7	route_7.txt	r_7
+Saleable	product_8	part_8	route_8.txt	r_8
+Saleable	product_9	part_9	route_9.txt	r_9
+Saleable	product_10	part_10	route_10.txt	r_10

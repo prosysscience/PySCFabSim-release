@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Chart</title>
+</head>
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+    google.charts.load("current", {packages: ["timeline"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+        var container = document.getElementById('example3.1');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn({type: 'string', id: 'Position'});
+        dataTable.addColumn({type: 'string', id: 'Name'});
+        dataTable.addColumn({type: 'string', role: 'style'});
+        dataTable.addColumn({type: 'date', id: 'Start'});
+        dataTable.addColumn({type: 'date', id: 'End'});
+        dataTable.addRows([["DATA"]]);
+        //dataTable.addRows([['_', '_', 'fill-color: #ffffff', new Date(1514772800000), new Date(1514772800000)]]);
+        // dataTable.addRows([['_', '_', 'fill-color: #ffffff', new Date(1514899015000), new Date(1514899015000)]]);
+        var options = {
+            colors: [["COLORS"]],
+            timeline: {
+                groupByRowLabel: true,
+            },
+        };
+        chart.draw(dataTable);
+    }
+</script>
+
+<div id="example3.1" style="height: 95vh"></div>
+
+</body>
+</html>
