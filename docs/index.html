@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>PySCFabSim &mdash; a performant semiconductor fab simulator for scheduling &amp; machine learning
+        research</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <!-- ================== BEGIN core-css ================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+    <link href="assets/css/one-page-parallax/vendor.min.css" rel="stylesheet"/>
+    <link href="assets/css/one-page-parallax/app.min.css" rel="stylesheet"/>
+    <!-- ================== END core-css ================== -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body data-bs-spy='scroll' data-bs-target='#header' data-bs-offset='51' class="theme-cyan">
+<!-- begin #page-container -->
+<div id="page-container" class="fade">
+    <!-- begin #header -->
+    <div id="header" class="header navbar navbar-inverse navbar-fixed-top navbar-expand-lg">
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin navbar-brand -->
+            <a href="index.html" class="navbar-brand">
+                <img src="./assets/img/logo_xs.png" alt="logo">
+                <span class="brand-text">Py<span class="text-theme">SCFab</span>Sim</span>
+            </a>
+            <!-- end navbar-brand -->
+            <!-- begin navbar-toggle -->
+            <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#header-navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- end navbar-header -->
+            <!-- begin navbar-collapse -->
+            <div class="collapse navbar-collapse" id="header-navbar">
+                <ul class="nav navbar-nav navbar-end">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-click="scroll-to-target">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-click="scroll-to-target">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service" data-click="scroll-to-target">SIMULATION
+                        MODEL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" data-click="scroll-to-target">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work" data-click="scroll-to-target">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#install" data-click="scroll-to-target">INSTALL</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-click="scroll-to-target">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end navbar-collapse -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #header -->
+
+    <!-- begin #home -->
+    <div id="home" class="content has-bg home">
+        <!-- begin content-bg -->
+        <div class="content-bg" style="background-image: url(assets/img/bg/bg-home.jpg);"
+             data-paroller="true"
+             data-paroller-type="foreground"
+             data-paroller-factor="-0.25">
+        </div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container home-content">
+            <h1>Welcome to Py<span class="text-theme">SCFab</span>Sim</h1>
+            <h3>A performant &amp; scalable semiconductor fab simulator for scheduling &amp; machine learning
+                research.</h3>
+            <p>
+                Use our event-based simulator for your research and industrial projects.
+            </p>
+            <a href="#about" class="btn btn-theme btn-primary"><i class="fa fa-fw fa-globe"></i> Discover</a>
+            <a href="#install" class="btn btn-theme btn-outline-white"><i class="fa fa-fw fa-download"></i> Install</a>
+            <a target="_blank" href="https://github.com/prosysscience/PySCFabSim-release"
+               class="btn btn-theme btn-outline-white"><i
+                    class="fab fa-fw fa-github"></i> GitHub Repository</a><br/>
+            <br/>
+            how to <a href="#install">contribute</a>?
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #home -->
+
+    <!-- begin #about -->
+    <div id="about" class="content" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container" data-animation="true" data-animation-type="animate__fadeInDown">
+            <h2 class="content-title">About PySCFabSim</h2>
+            <p class="content-desc">
+                Our tool is an event-based simulator built in pure Python.
+                The was developed for simulating factories up to real-world size, aiming to support the research into
+                new scheduling algorithms from prototyping to large-scale experiments. The simulator comes with a
+                declarative environment definition framework and is out of the box usable with existing reinforcement
+                learning methods, priority-based rules, or evolutionary algorithms.
+            </p>
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <!-- begin about -->
+                    <div class="about">
+                        <h3 class="mb-3">Our Story</h3>
+                        <p>
+
+                        </p>
+                        <p>
+                            This work was partially funded by KWF project 28472, cms electronics GmbH, FunderMax GmbH,
+                            Hirsch Armbänder GmbH, incubed IT GmbH, Infineon Technologies Austria AG, Isovolta AG,
+                            Kostwein Holding GmbH, and Privatstiftung Kärntner Sparkasse.
+                        </p>
+                    </div>
+                    <!-- end about -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <h3 class="mb-3">Our Goals</h3>
+                    <!-- begin skills -->
+                    <div class="skills">
+                        <div class="skills-name">Extensibility</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-theme"
+                                 style="width: 95%">
+                                <span class="progress-number">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills-name">Performance</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-theme"
+                                 style="width: 90%">
+                                <span class="progress-number">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills-name">Scalability</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-theme"
+                                 style="width: 85%">
+                                <span class="progress-number">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills-name">Easy Integration</div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-theme"
+                                 style="width: 80%">
+                                <span class="progress-number">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end skills -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <h3 class="mb-3">Join our team</h3>
+                    <!-- begin about-author -->
+                    <div class="about-author">
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i>
+                            <h3>We welcome contributions to our repository, included new plugins and datasets</h3>
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <!-- end about-author -->
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #about -->
+
+    <!-- begin #milestone -->
+    <div id="milestone" class="content bg-black-darker has-bg" data-scrollview="true">
+        <!-- begin content-bg -->
+        <div class="content-bg" style="background-image: url(assets/img/bg/bg-milestone.jpg)"
+             data-paroller="true"
+             data-paroller-factor="0.5"
+             data-paroller-factor-md="0.01"
+             data-paroller-factor-xs="0.01"></div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-3 -->
+                <div class="col-lg-3 milestone-col">
+                    <div class="milestone">
+                        <div class="number" data-animation="true" data-animation-type="number" data-final-number="5">
+                            5
+                        </div>
+                        <div class="title">Bundled Datasets</div>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <!-- begin col-3 -->
+                <div class="col-lg-3 milestone-col">
+                    <div class="milestone">
+                        <div class="number" data-animation="true" data-animation-type="number"
+                             data-final-number="500000">
+                            500,000
+                        </div>
+                        <div class="title">Simulated Operations / Min</div>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <!-- begin col-3 -->
+                <div class="col-lg-3 milestone-col">
+                    <div class="milestone">
+                        <div class="number" data-animation="true" data-animation-type="number"
+                             data-final-number="3">3
+                        </div>
+                        <div class="title">Publications</div>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <!-- begin col-3 -->
+                <div class="col-lg-3 milestone-col">
+                    <div class="milestone">
+                        <div class="number" data-animation="true" data-animation-type="number" data-final-number="10">
+                            10
+                        </div>
+                        <div class="title">Minutes to Install</div>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #milestone -->
+
+
+    <!-- beign #service -->
+    <div id="service" class="content" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container">
+            <h2 class="content-title">Semiconductor Manufacturing Process Model</h2>
+            <p class="content-desc">
+                Our fab model involves many special characteristics and challenges of the semiconductor manufacturing
+                process.
+            </p>
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-repeat"></i></div>
+                        <div class="info">
+                            <h4 class="title">Re-entrant flow</h4>
+                            <p class="desc">
+                                A lot visits a list of machine multiple times.This characteristic of the semicondutory
+                                manufacturing makes avoiding congestions difficult.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-bars"></i></div>
+                        <div class="info">
+                            <h4 class="title">Batch machines</h4>
+                            <p class="desc">Some machine can process up to 10 lots of the same operation in
+                                parallel.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-screwdriver-wrench"></i></div>
+                        <div class="info">
+                            <h4 class="title">Breakdowns &amp; maintenances</h4>
+                            <p class="desc">Machine suffer from regular breakdowns or become unavailable due to
+                                planned maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-eye"></i></div>
+                        <div class="info">
+                            <h4 class="title">Rework &amp; inspection steps</h4>
+                            <p class="desc">
+                                Online route changes are possible for faulty lots.
+                                Additionally, some inspecition steps are only performed for randomly selected lots.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-link"></i></div>
+                        <div class="info">
+                            <h4 class="title">Dedications</h4>
+                            <p class="desc">
+                                Some steps enforce machine dedication in the re-entrant flow.
+                                Thus, the lot has to visit the same machine multiple times, with several steps
+                                in-between.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <div class="icon" data-animation="true" data-animation-type="animate__bounceIn"><i
+                                class="fa fa-arrow-down-wide-short"></i></div>
+                        <div class="info">
+                            <h4 class="title">Sequence-dependent setups</h4>
+                            <p class="desc">Setup times may depend on both the previous and the required setup.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #service -->
+
+    <!-- begin #quote -->
+    <div id="quote" class="content bg-black-darker has-bg" data-scrollview="true">
+        <!-- begin content-bg -->
+        <div class="content-bg" style="background-image: url(assets/img/bg/bg-quote.jpg)"
+             data-paroller-factor="0.5"
+             data-paroller-factor-md="0.01"
+             data-paroller-factor-xs="0.01">
+        </div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container" data-animation="true" data-animation-type="animate__fadeInLeft">
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-12 -->
+                <div class="col-lg-12 quote">
+                    <i class="fa fa-quote-left"></i> Our tool is designed to be <span class="text-theme">performant</span>,<br/>
+                    for training with high sample-complexity machine learning algorithms!
+                    <i class="fa fa-quote-right"></i>
+                    <small>Developed by the Production Systems Group</small>
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #quote -->
+
+    <!-- begin #team -->
+    <div id="team" class="content" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container">
+            <h2 class="content-title">Our Team</h2>
+            <p class="content-desc">
+                PySCFabSim was developed by the
+                <a target="_blank" href="https://www.aau.at/en/aics/research-groups/research-group-production-systems/">
+                    Production Systems</a> group at the
+                <a href="https://www.aau.at/en/aics/" target="_blank">Department of Artificial Intelligence and
+                    Cybersecurity</a>
+                of the <a target="_blank" href="https://aau.at">University of Klagenfurt</a>.
+            </p>
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <!-- begin team -->
+                    <div class="team">
+                        <div class="image" data-animation="true" data-animation-type="animate__flipInX">
+                            <img src="assets/img/user/user-1.jpg" alt="Benjamin Kovács"/>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Benjamin Kovács</h3>
+                            <div class="title text-theme">DEVELOPER</div>
+                            <p>
+                                Benjamin Kovács is a Ph.D. candidate in the Institute for Artificial Intelligence and
+                                Cybersecurity at the University of Klagenfurt, Austria. His research topic is the
+                                development and application of simulations for optimizing manufacturing processes.
+                                He is the main developer and maintainer of this simulator project.
+                            </p>
+                            <div class="social">
+                                <a target="_blank" href="mailto:Benjamin.Kovacs@aau.at"><i
+                                        class="fa fa-envelope fa-lg fa-fw"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/benjamin-kov%C3%A1cs-3901bb86/"><i
+                                        class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end team -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <!-- begin team -->
+                    <div class="team">
+                        <div class="image" data-animation="true" data-animation-type="animate__flipInX">
+                            <img src="assets/img/user/user-2.jpg" alt="Pierre Tassel"/>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Pierre Tassel</h3>
+                            <div class="title text-theme">DEVELOPER</div>
+                            <p>Pierre Tassel is a Ph.D. candidate in the Institute for Artificial Intelligence and
+                                Cybersecurity at the University of Klagenfurt, Austria. His current research interests
+                                include reinforcement learning methods for combinatorial optimization problems and
+                                constraint programming.</p>
+                            <div class="social">
+                                <a target="_blank" href="mailto:Pierre.Tassel@aau.at"><i
+                                        class="fa fa-envelope fa-lg fa-fw"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/pierre-tassel-793076168/"><i
+                                        class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end team -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-lg-4">
+                    <!-- begin team -->
+                    <div class="team">
+                        <div class="image" data-animation="true" data-animation-type="animate__flipInX">
+                            <img src="assets/img/user/user-3.jpg" alt="Martin Gebser"/>
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Martin Gebser</h3>
+                            <div class="title text-theme">SUPERVISOR</div>
+                            <p>Martin Gebser is professor for Production Systems at the University of
+                                Klagenfurt and Graz University of Technology. He received his PhD from the
+                                University of Potsdam in 2011, where he worked on theoretical and practical
+                                aspects of declarative problem solving methods. He works on applications of modern
+                                solving technology addresses, e.g., planning and scheduling, product configuration,
+                                and system design.
+                            </p>
+                            <div class="social">
+                                <a target="_blank" href="mailto:Martin.Gebser@aau.at"><i
+                                        class="fa fa-envelope fa-lg fa-fw"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/martin-gebser-71196b68/"><i
+                                        class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end team -->
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #team -->
+
+    <!-- beign #action-box -->
+    <div id="action-box" class="content has-bg" data-scrollview="true">
+        <!-- begin content-bg -->
+        <div class="content-bg" style="background-image: url(assets/img/bg/bg-action.jpg)"
+             data-paroller-factor="0.5"
+             data-paroller-factor-md="0.01"
+             data-paroller-factor-xs="0.01">
+        </div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container" data-animation="true" data-animation-type="animate__fadeInRight">
+            <!-- begin row -->
+            <div class="row action-box">
+                <!-- begin col-9 -->
+                <div class="col-lg-9">
+                    <div class="icon-large text-theme">
+                        <i class="fa fa-binoculars"></i>
+                    </div>
+                    <h3>CHECK OUT OUR GITHUB PAGE!</h3>
+                    <p>
+                        Source codes, documentation, code examples, installation instructions &amp; more.
+                        All in one place.
+                    </p>
+                </div>
+                <!-- end col-9 -->
+                <!-- begin col-3 -->
+                <div class="col-lg-3">
+                    <a target="_blank" href="https://github.com/prosysscience/PySCFabSim-release"
+                       class="btn btn-theme btn-primary">
+                        <i class="fab fa-fw fa-github"></i>
+                        Open GitHub
+                    </a>
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #action-box -->
+
+    <!-- begin #work -->
+    <div id="work" class="content" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container" data-animation="true" data-animation-type="animate__fadeInDown">
+            <h2 class="content-title">Recent Appearances &amp; Publication</h2>
+            <p class="content-desc">
+                Our tool has been published in multiple peer-reviewed scientific conferences.
+                <br/>
+                Further conference and journal submissions are in progress.
+            </p>
+            <!-- begin row -->
+            <div class="row row-space-10">
+                <div class="col-md-6 col-lg-4">
+                    <!-- begin work -->
+                    <div class="work">
+                        <div class="image">
+                            <a target="_blank" href="assets/img/portfolio/wsc_presentation.pdf">
+                                <img src="assets/img/portfolio/wsc_presentation.png" alt="WSC Presentation"/></a>
+                        </div>
+                        <div class="desc">
+                            <span class="desc-title">Presentation at the 2022 Winter Simulation Conference</span>
+                            <span class="desc-text">&nbsp;</span>
+                        </div>
+                    </div>
+                    <!-- end work -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- begin work -->
+                    <div class="work">
+                        <div class="image">
+                            <a target="_blank" href="https://informs-sim.org/wsc22papers/by_area.html"><img
+                                    src="assets/img/portfolio/wsc_paper.png" alt="WSC Paper"/></a>
+                        </div>
+                        <div class="desc">
+                            <span class="desc-title">Paper at the 2022 Winter Simulation Conference</span>
+                            <span class="desc-text">&nbsp;</span>
+                        </div>
+                    </div>
+                    <!-- end work -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- begin work -->
+                    <div class="work">
+                        <div class="image">
+                            <a target="_blank" href="assets/img/portfolio/asmc_presentation.pdf"><img
+                                    src="assets/img/portfolio/asmc_presentation.png" alt="ASMC Presentation"/></a>
+                        </div>
+                        <div class="desc">
+                            <span class="desc-title">Presentation at the 2022 33rd Advanced Semiconductor Manufacturing Conference</span>
+                            <span class="desc-text">&nbsp;</span>
+                        </div>
+                    </div>
+                    <!-- end work -->
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- begin work -->
+                    <div class="work">
+                        <div class="image">
+                            <a target="_blank" href="https://ieeexplore.ieee.org/document/9792520"><img
+                                    src="assets/img/portfolio/asmc_paper.png" alt="ASMC Paper"/></a>
+                        </div>
+                        <div class="desc">
+                            <span class="desc-title">Paper at the 2022 33rd Advanced Semiconductor Manufacturing Conference</span>
+                            <span class="desc-text">&nbsp;</span>
+                        </div>
+                    </div>
+                    <!-- end work -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #work -->
+
+    <!-- begin #client -->
+    <div id="client" class="content has-bg bg-green" data-scrollview="true">
+        <!-- begin content-bg -->
+        <div class="content-bg" style="background-image: url(assets/img/bg/bg-client.jpg)"
+             data-paroller-factor="0.5"
+             data-paroller-factor-md="0.01"
+             data-paroller-factor-xs="0.01">
+        </div>
+        <!-- end content-bg -->
+        <!-- begin container -->
+        <div class="container" data-animation="true" data-animation-type="animate__fadeInUp">
+            <h2 class="content-title">Our Client Testimonials</h2>
+            <!-- begin carousel -->
+            <div class="carousel testimonials slide" data-ride="carousel" id="testimonials">
+                <!-- begin carousel-inner -->
+                <div class="carousel-inner text-center">
+                    <!-- begin item -->
+                    <div class="carousel-item active">
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i>
+                            Using the simulation with the chart generator tool makes it<br/>
+                            super easy to analyze and compare the behavior of different agents.
+                            <i class="fa fa-quote-right"></i>
+                        </blockquote>
+                        <div class="name"> — User</div>
+                    </div>
+                    <!-- end item -->
+                    <!-- begin item -->
+                    <div class="carousel-item">
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i>
+                            The Weights &amp; Biases plugin provides useful insights about the bottlenecks <br/>
+                            and helps to resolve issues with the dispatcher strategies.
+                            <i class="fa fa-quote-right"></i>
+                        </blockquote>
+                        <div class="name"> User</div>
+                    </div>
+                    <!-- end item -->
+                </div>
+                <!-- end carousel-inner -->
+                <!-- begin carousel-indicators -->
+                <ol class="carousel-indicators m-b-0">
+                    <li data-bs-target="#testimonials" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#testimonials" data-bs-slide-to="1" class=""></li>
+                </ol>
+                <!-- end carousel-indicators -->
+            </div>
+            <!-- end carousel -->
+        </div>
+        <!-- end containter -->
+    </div>
+    <!-- end #client -->
+
+    <!-- begin #pricing -->
+    <div id="install" class="content" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container">
+            <h2 class="content-title">Installation</h2>
+            <p class="content-desc">
+                We provide three installation options based on the requirements of your project.
+            </p>
+            <!-- begin pricing-table -->
+            <ul class="pricing-table pricing-col-3" style="text-align: center">
+                <li data-animation="true" data-animation-type="animate__fadeInUp">
+                    <div class="pricing-container">
+                        <h3>Pre-built Docker Containers <span class="badge bg-success ms-1">EASY</span></h3>
+                        <div class="price">
+                            <div class="price-figure">
+                                <span class="price-number">free</span>
+                                <span class="price-tenure">forever</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li>Check out the performance <span class="badge bg-danger ms-1">HOT</span></li>
+                            <li>Try the <a target="_blank" href="https://wandb.ai/">Weights &amp; Biases</a> monitoring
+                                plugin
+                            </li>
+                            <li>Generate charts of schedules</li>
+                            <li>Play with our examples</li>
+                            <li>Reproduce results in papers</li>
+                            <li>Use your own datasets</li>
+                            <li class="text-success">No setup outside Docker containers</li>
+                            <li class="text-danger">No option to modify the core simulation</li>
+                            <li class="text-danger">No option to add custom algorithms</li>
+                        </ul>
+                        <div class="footer">
+                            <button href="#" class="btn btn-inverse btn-theme btn-block" disabled>
+                                <i class="fa fa-hourglass fa-fw"></i>
+                                Coming soon...
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="highlight" data-animation="true" data-animation-type="animate__fadeInUp">
+                    <div class="pricing-container">
+                        <h3>PyPI Packages</h3>
+                        <div class="price">
+                            <div class="price-figure">
+                                <span class="price-number">free</span>
+                                <span class="price-tenure">forever</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li>Easy installation with pip or conda</li>
+                            <li>Interfaces for dispatching strategies, planning tools, and evolutionary algorithms</li>
+                            <li>Create (single- or multi-agent) reinforcement learning environments</li>
+                            <li>Customize reinforcement learning environments</li>
+                            <li>Use your own datasets</li>
+                            <li>Develop custom plugins</li>
+                            <li class="text-danger">No option to modify the core simulation</li>
+                        </ul>
+                        <div class="footer">
+                            <button disabled href="#" class="btn btn-primary btn-theme btn-block">
+                                <!--<i class="fa fa-download fa-fw"></i>
+                                Install Now-->
+                                <i class="fa fa-hourglass fa-fw"></i>
+                                Coming soon...
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li data-animation="true" data-animation-type="animate__fadeInUp">
+                    <div class="pricing-container">
+                        <h3>Latest Source Codes <span class="badge bg-warning ms-1">EXPERT</span></h3>
+                        <div class="price">
+                            <div class="price-figure">
+                                <span class="price-number">free</span>
+                                <span class="price-tenure">forever</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li>For experts who look for building upon our tool</li>
+                            <li>Fully customizable</li>
+                            <li>Extend the simulator</li>
+                            <li>Contribute to the codebase</li>
+                            <li>Write documentation</li>
+                            <li>Join the community</li>
+                            <li>Report bugs, feature requests</li>
+                            <li class="text-danger">Manual installation of package required</li>
+                        </ul>
+                        <div class="footer">
+                            <a href="https://github.com/prosysscience/PySCFabSim-release"
+                               class="btn btn-inverse btn-theme btn-block">
+                                <i class="fab fa-github fa-fw"></i>
+                                Visit our GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #pricing -->
+
+    <!-- begin #contact -->
+    <div id="contact" class="content bg-light" data-scrollview="true">
+        <!-- begin container -->
+        <div class="container">
+            <h2 class="content-title">Contact Us</h2>
+            <p class="content-desc">
+                You can contact our team using the e-mail addresses and social accounts, or in person at the
+                University of Klagenfurt in Austria.
+            </p>
+            <!-- begin row -->
+            <h3>Planned conference appearances.</h3>
+            <div class="row">
+                <div class="col-lg-4" data-animation="true" data-animation-type="animate__fadeInLeft">
+                    <p>
+                        2022 Winter Simulation Conference
+                    </p>
+                    <p>
+                        <strong>Marina Bay Sands</strong><br/>
+                        Expo and Convention Center<br/>
+                        Singapore<br/>
+                    </p>
+                    <p>
+                        Presentation time not yet known.
+                    </p>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #contact -->
+
+    <!-- begin #footer -->
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="./assets/img/logo_small.png" style="display: block; width: 128px; margin: auto" alt="logo">
+                <br/>
+                Py<span class="text-theme">SCFab</span>Sim
+            </div>
+            <p>
+                &copy; Copyright Benjamin Kovács 2022 <br/>
+                Theme by <a target="_blank" href="https://seantheme.com/">SeanTheme</a>
+            </p>
+            <p class="social-list" style="display: none">
+                <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g fa-fw"></i></a>
+                <a href="#"><i class="fab fa-dribbble fa-fw"></i></a>
+            </p>
+        </div>
+    </div>
+    <!-- end #footer -->
+</div>
+<!-- end #page-container -->
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="assets/js/one-page-parallax/vendor.min.js"></script>
+<script src="assets/js/one-page-parallax/app.min.js"></script>
+
+</body>
+</html>
