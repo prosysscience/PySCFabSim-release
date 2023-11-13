@@ -1,2 +1,4 @@
 .idea/
 venv/
+.cpython.pyc
+.pyc
