@@ -11,10 +11,10 @@ if __name__ == '__main__':
     alpha = 0.0003
     agent = Agent(n_actions=env.action_space.n, batch_size=batch_size, 
                     alpha=alpha, n_epochs=n_epochs, 
-                    input_dims=env.observation_space.shape)
-    n_games = 300
+                    input_dims=env.observation_space.shape[0])
+    n_games = 100
 
-    figure_file = 'plots/cartpole.png'
+    figure_file = 'PPO_algorithmus_dr_phil\plots/cartpole.png'
 
     best_score = env.reward_range[0]
     score_history = [] 
@@ -25,11 +25,16 @@ if __name__ == '__main__':
 
     for i in range(n_games):
         observation = env.reset()
+        observation = observation[0]
         done = False
         score = 0
         while not done:
+            #print("observation" , observation)    
             action, prob, val = agent.choose_action(observation)
-            observation_, reward, done, info = env.step(action)
+            #observation_, reward, done, info = env.step(action)
+            observation_, reward, done, truncated, info = env.step(action)
+            #observation_, reward, done, info = None, None, None, None 
+            #print("observation_" , observation_)          
             n_steps += 1
             score += reward
             agent.remember(observation, action, prob, val, reward, done)

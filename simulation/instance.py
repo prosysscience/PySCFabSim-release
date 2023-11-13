@@ -1,12 +1,12 @@
 from collections import defaultdict
 from typing import Dict, List, Set, Tuple
 
-from simulation.classes import Machine, Route, Lot
-from simulation.dispatching.dm_lot_for_machine import LotForMachineDispatchManager
-from simulation.dispatching.dm_machine_for_lot import MachineForLotDispatchManager
-from simulation.event_queue import EventQueue
-from simulation.events import MachineDoneEvent, LotDoneEvent, BreakdownEvent, ReleaseEvent
-from simulation.plugins.interface import IPlugin
+from classes import Machine, Route, Lot
+from dispatching.dm_lot_for_machine import LotForMachineDispatchManager
+from dispatching.dm_machine_for_lot import MachineForLotDispatchManager
+from event_queue import EventQueue
+from events import MachineDoneEvent, LotDoneEvent, BreakdownEvent, ReleaseEvent
+from plugins.interface import IPlugin
 
 
 class Instance:

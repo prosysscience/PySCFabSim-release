@@ -1,4 +1,4 @@
-from simulation.plugins.interface import IPlugin
+from plugins.interface import IPlugin
 
 
 class CostPlugin(IPlugin):

@@ -4,11 +4,11 @@ import json
 import statistics
 from collections import defaultdict
 
-from simulation.classes import Lot, Step
+from classes import Lot, Step
 
 
 def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy'):
-    from simulation.instance import Instance
+    from instance import Instance
     instance: Instance
     lot: Lot
     lots = defaultdict(lambda: {'ACT': [], 'throughput': 0, 'on_time': 0, 'tardiness': 0, 'waiting_time': 0,

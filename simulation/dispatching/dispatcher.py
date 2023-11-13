@@ -1,5 +1,5 @@
-from simulation.classes import Lot, Machine
-from simulation.randomizer import Randomizer
+from classes import Lot, Machine
+from randomizer import Randomizer
 
 r = Randomizer()
 

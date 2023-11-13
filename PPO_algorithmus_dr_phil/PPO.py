@@ -49,12 +49,13 @@ class PPOMemory:
 
 class ActorNetwork(nn.Module):
     def __init__(self, n_actions, input_dims, alpha,
-            fc1_dims=256, fc2_dims=256, chkpt_dir='tmp/ppo'):
+            fc1_dims=256, fc2_dims=256, chkpt_dir='PPO_algorithmus_dr_phil/tmp/ppo/'):
         super(ActorNetwork, self).__init__()
-
+        print("DIMS - A=", input_dims, alpha, fc1_dims, fc2_dims, n_actions)
         self.checkpoint_file = os.path.join(chkpt_dir, 'actor_torch_ppo')
+        
         self.actor = nn.Sequential(
-                nn.Linear(*input_dims, fc1_dims), #Linear Layer
+                nn.Linear(input_dims, fc1_dims), #Linear Layer
                 nn.ReLU(),  # Activation Function
                 nn.Linear(fc1_dims, fc2_dims),
                 nn.ReLU(),
@@ -80,12 +81,14 @@ class ActorNetwork(nn.Module):
 
 class CriticNetwork(nn.Module):
     def __init__(self, input_dims, alpha, fc1_dims=256, fc2_dims=256,
-            chkpt_dir='tmp/ppo'): #keine Actions -> Output ist nur ein single state
+            chkpt_dir='PPO_algorithmus_dr_phil/tmp/ppo/'): #keine Actions -> Output ist nur ein single state
         super(CriticNetwork, self).__init__()
+
+        print("DIMS - C=", input_dims, alpha, fc1_dims, fc2_dims)
 
         self.checkpoint_file = os.path.join(chkpt_dir, 'critic_torch_ppo')
         self.critic = nn.Sequential(
-                nn.Linear(*input_dims, fc1_dims),
+                nn.Linear(input_dims, fc1_dims),
                 nn.ReLU(),
                 nn.Linear(fc1_dims, fc2_dims),
                 nn.ReLU(),
@@ -133,7 +136,7 @@ class Agent:
         self.critic.load_checkpoint()
 
     def choose_action(self, observation):
-        state = T.tensor([observation], dtype=T.float).to(self.actor.device)
+        state = T.tensor(observation, dtype=T.float).to(self.actor.device)
 
         dist = self.actor(state)
         value = self.critic(state)

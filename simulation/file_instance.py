@@ -1,10 +1,10 @@
 from typing import Dict, List
 
-from simulation.classes import Machine, FileRoute, Lot
-from simulation.events import BreakdownEvent
-from simulation.instance import Instance
-from simulation.randomizer import Randomizer
-from simulation.tools import get_interval, get_distribution, UniformDistribution, date_time_parse
+from classes import Machine, FileRoute, Lot
+from events import BreakdownEvent
+from instance import Instance
+from randomizer import Randomizer
+from tools import get_interval, get_distribution, UniformDistribution, date_time_parse
 
 
 class FileInstance(Instance):

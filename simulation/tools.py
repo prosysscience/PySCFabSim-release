@@ -1,6 +1,6 @@
 import datetime
 
-from simulation.randomizer import Randomizer
+from randomizer import Randomizer
 
 r = Randomizer()
 

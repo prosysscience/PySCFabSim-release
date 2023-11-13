@@ -1,8 +1,8 @@
 from typing import List, Dict
 
-from simulation.events import BreakdownEvent
-from simulation.randomizer import Randomizer
-from simulation.tools import get_interval, get_distribution, date_time_parse, ConstantDistribution
+from events import BreakdownEvent
+from randomizer import Randomizer
+from tools import get_interval, get_distribution, date_time_parse, ConstantDistribution
 
 r = Randomizer()
 

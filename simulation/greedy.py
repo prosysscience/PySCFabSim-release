@@ -4,13 +4,13 @@ from collections import defaultdict
 from datetime import datetime
 from typing import List
 
-from simulation.classes import Lot, Machine
-from simulation.dispatching.dispatcher import dispatcher_map
-from simulation.file_instance import FileInstance
-from simulation.plugins.cost_plugin import CostPlugin
-from simulation.randomizer import Randomizer
-from simulation.read import read_all
-from simulation.stats import print_statistics
+from classes import Lot, Machine
+from dispatching.dispatcher import dispatcher_map
+from file_instance import FileInstance
+from plugins.cost_plugin import CostPlugin
+from randomizer import Randomizer
+from read import read_all
+from stats import print_statistics
 
 import argparse
 
@@ -119,6 +119,10 @@ def run_greedy():
     p.add_argument('--alg', type=str, default='l4m', choices=['l4m', 'm4l'])
     a = p.parse_args()
 
+    a.dataset = "SMT2020_HVLM"
+    a.days = 10
+    a.dispatcher = "fifo"
+
     sys.stderr.write('Loading ' + a.dataset + ' for ' + str(a.days) + ' days, using ' + a.dispatcher + '\n')
     sys.stderr.flush()
 
@@ -131,10 +135,10 @@ def run_greedy():
     l4m = a.alg == 'l4m'
     plugins = []
     if a.wandb:
-        from simulation.plugins.wandb_plugin import WandBPlugin
+        from plugins.wandb_plugin import WandBPlugin
         plugins.append(WandBPlugin())
     if a.chart:
-        from simulation.plugins.chart_plugin import ChartPlugin
+        from plugins.chart_plugin import ChartPlugin
         plugins.append(ChartPlugin())
     plugins.append(CostPlugin())
     instance = FileInstance(files, run_to, l4m, plugins)
@@ -155,6 +159,7 @@ def run_greedy():
             if lots is None:
                 instance.usable_machines.remove(machine)
             else:
+                #action = Rl.choose()
                 instance.dispatch(machine, lots)
         else:
             machine, lots = get_lots_to_dispatch_by_lot(instance, instance.current_time, dispatcher)

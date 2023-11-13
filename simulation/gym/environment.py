@@ -1,17 +1,21 @@
 import statistics
 from collections import defaultdict
 from typing import List
-
+import os
+import sys
 import gym
 from gym import Env
 
-from simulation.classes import Machine, Lot
-from simulation.file_instance import FileInstance
-from simulation.greedy import get_lots_to_dispatch_by_machine
-from simulation.dispatching.dispatcher import Dispatchers, dispatcher_map
-from simulation.gym.E import E
-from simulation.randomizer import Randomizer
-from simulation.read import read_all
+sys.path.append(os.path.join('C:/','Users','willi','OneDrive','Documents','Studium','Diplomarbeit','Programm + Datengrundlage','PySCFabSim-release','simulation'))
+sys.path.append(os.path.join('C:/','Users','willi','OneDrive','Documents','Studium','Diplomarbeit','Programm + Datengrundlage','PySCFabSim-release','simulation', 'gym'))
+from classes import Machine, Lot
+from file_instance import FileInstance
+from greedy import get_lots_to_dispatch_by_machine
+from dispatching.dispatcher import Dispatchers, dispatcher_map
+from E import E
+from randomizer import Randomizer
+from read import read_all
+from sample_envs import DEMO_ENV_1
 
 r = Randomizer()
 
@@ -206,3 +210,5 @@ class DynamicSCFabSimulationEnvironment(Env):
 
     def render(self, mode="human"):
         pass
+
+#env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, days=100,dispatcher="fifo",dataset="SMT2020_HVLM", num_actions=9, active_station_group="Implant_128", seed=0, max_steps=1000000, reward_type=2)

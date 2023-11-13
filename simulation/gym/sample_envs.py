@@ -1,4 +1,4 @@
-from simulation.gym.E import E
+from E import E
 
 DEMO_ENV_1 = {
     'action': E.A.CHOOSE_LOT_FOR_FREE_MACHINE,
