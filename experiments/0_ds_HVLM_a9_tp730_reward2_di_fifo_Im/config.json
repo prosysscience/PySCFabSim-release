@@ -1,0 +1,12 @@
+{
+  "name": "0_ds_HVLM_a9_tp730_reward2_di_fifo_Im",
+  "params": {
+    "seed": 0,
+    "dataset": "HVLM",
+    "action_count": 9,
+    "training_period": 100,
+    "dispatcher": "fifo",
+    "reward": 2,
+    "station_group": "Implant_128"
+  }
+}
