@@ -1,6 +1,3 @@
 .idea/
 venv/
-.cpython-311.pyc
-.pyc
-_pychache_/
-```	
+*.pyc
