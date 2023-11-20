@@ -12,42 +12,56 @@ from simulation.stats import print_statistics
 
 
 def main():
+    print("Starting Test")
+    testing_days = 365 * 2
     t = datetime.datetime.now()
-    ranag = 'random' in argv[2]
-    if not ranag:
-        model = PPO.load(os.path.join(argv[1], argv[2]))
-    with io.open(os.path.join(argv[1], "config.json"), "r") as f:
+    #ranag = 'random' in argv[2]
+    ranag =  "trained.weights"
+    arg1 = "experiments/0_ds_HVLM_a9_tp365_reward2_di_fifo_Di"
+    #if not ranag:
+    model = PPO.load(os.path.join(arg1, ranag))
+    with io.open(os.path.join(arg1, "config.json"), "r") as f:
         config = json.load(f)['params']
-
-    args = dict(seed=0, num_actions=config['action_count'], active_station_group=config['station_group'], days=365 * 2,
-                dataset='SMT2020_' + config['dataset'], dispatcher=config['dispatcher'], reward_type=config['reward'])
+    args = dict(seed=0, num_actions=9, active_station_group='<Diffusion_FE_120>', days=testing_days,
+                dataset='SMT2020_' + 'HVLM', dispatcher='fifo', reward_type=2)
+    
+    #args = dict(seed=0, num_actions=config['action_count'], active_station_group=config['station_group'], days=testing_days,
+    #            dataset='SMT2020_' + config['dataset'], dispatcher=config['dispatcher'], reward_type=config['reward'])
+    
     env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, max_steps=1000000000)
     obs = env.reset()
+    print("obs", obs)
     reward = 0
 
-    checkpoints = [180, 365]
+    checkpoints = [180, 365, testing_days]
     current_checkpoint = 0
 
     steps = 0
     shown_days = 0
     deterministic = True
+    print("Starting Loop")
     while True:
-        if not ranag:
-            action, _states = model.predict(obs, deterministic=deterministic)
-        if ranag:
-            if argv[2] == 'random':
-                action = env.action_space.sample()
-            else:
-                state = obs[4:]
-                actions = config['action_count']
-                one_length = len(state) // actions
-                descending = True
-                index = 0
-                sortable = []
-                for i in range(actions):
-                    sortable.append((state[one_length * i + index], i))
-                sortable.sort(reverse=descending)
-                action = sortable[0][1]
+        
+        action, _states = model.predict(obs, deterministic=deterministic)
+        print("action", action)
+        # if ranag:
+        #     if ranag == 'random':
+        #         action = env.action_space.sample()
+        #     else:
+        #         state = obs[4:]
+        #         print("State", state)
+        #         actions = config['action_count']
+        #         one_length = len(state) // actions
+        #         print("one_length", one_length)
+        #         descending = True
+        #         index = 0
+        #         sortable = []
+        #         for i in range(actions):
+        #             sortable.append((state[one_length * i + index], i))
+        #         sortable.sort(reverse=descending)
+        #         print("sortable", sortable)
+        #         action = sortable[0][1]
+        #         print("action",action)
         obs, r, done, info = env.step(action)
         if r < 0:
             deterministic = False

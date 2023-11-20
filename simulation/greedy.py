@@ -1,5 +1,7 @@
 import os
 import sys
+sys.path.append(os.path.join('C:/','Users','willi','OneDrive','Documents','Studium','Diplomarbeit','Programm + Datengrundlage','PySCFabSim-release','simulation'))
+
 from collections import defaultdict
 from datetime import datetime
 from typing import List
@@ -120,7 +122,7 @@ def run_greedy():
     a = p.parse_args()
 
     a.dataset = "SMT2020_HVLM"
-    a.days = 10
+    a.days = 730
     a.dispatcher = "fifo"
 
     sys.stderr.write('Loading ' + a.dataset + ' for ' + str(a.days) + ' days, using ' + a.dispatcher + '\n')

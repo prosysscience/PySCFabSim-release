@@ -120,6 +120,7 @@ class DynamicSCFabSimulationEnvironment(Env):
             if self.station_group is None or \
                     f'[{machine.group}]' in self.station_group or \
                     f'<{machine.family}>' in self.station_group:
+                #print("Entscheidung benötigt")
                 found = True
             else:
                 machine, lots = get_lots_to_dispatch_by_machine(self.instance, machine=machine,
@@ -128,7 +129,6 @@ class DynamicSCFabSimulationEnvironment(Env):
                     self.instance.usable_machines.remove(machine)
                 else:
                     self.instance.dispatch(machine, lots)
-
         self._machine = machine
         actions = defaultdict(lambda: [])
         for lot in machine.waiting_lots:
@@ -210,5 +210,3 @@ class DynamicSCFabSimulationEnvironment(Env):
 
     def render(self, mode="human"):
         pass
-
-#env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, days=100,dispatcher="fifo",dataset="SMT2020_HVLM", num_actions=9, active_station_group="Implant_128", seed=0, max_steps=1000000, reward_type=2)

@@ -19,7 +19,7 @@ from simulation.gym.sample_envs import DEMO_ENV_1
 
 
 def main():
-    to_train = 1000000
+    to_train = 100000
     t = time.time()
 
     class MyCallBack(CheckpointCallback):
@@ -40,16 +40,24 @@ def main():
     args = dict(num_actions=p['action_count'], active_station_group=p['station_group'],
                 days=p['training_period'], dataset='SMT2020_' + p['dataset'],
                 dispatcher=p['dispatcher'])
-    env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, seed=p['seed'], max_steps=1000000, reward_type=p['reward'])
-    eval_env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, seed=777, max_steps=10000, reward_type=p['reward'])
+    print("Args angenommen")
+    env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, seed=p['seed'], max_steps=10000000, reward_type=p['reward'])
+    print("Env erstellt")
+    #eval_env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, seed=777, max_steps=10000, reward_type=p['reward'])
+    print("Alles erstellt - ich lerne jz")
     model = PPO("MlpPolicy", env, verbose=1)
 
     p = os.path.dirname(os.path.realpath(fn))
     checkpoint_callback = MyCallBack(save_freq=100000, save_path=p, name_prefix='checkpoint_')
+    #model.learn(
+    #    total_timesteps=to_train, eval_freq=4000000, eval_env=eval_env, n_eval_episodes=1,
+    #    callback=checkpoint_callback
+    #)
     model.learn(
-        total_timesteps=to_train, eval_freq=4000000, eval_env=eval_env, n_eval_episodes=1,
+        total_timesteps=to_train,
         callback=checkpoint_callback
     )
+    print("Ich sichere")
     model.save(os.path.join(p, 'trained.weights'))
 
 
