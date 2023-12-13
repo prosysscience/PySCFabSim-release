@@ -3,6 +3,8 @@ import io
 import json
 import statistics
 from collections import defaultdict
+import pandas as pd
+import matplotlib.pyplot as plt
 
 from classes import Lot, Step
 
@@ -15,6 +17,7 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
                                 'processing_time': 0, 'transport_time': 0, 'waiting_time_batching': 0})
     apt = {}
     dl = {}
+    lot_list={}
     for lot in instance.done_lots:
         lots[lot.name]['ACT'].append(lot.done_at - lot.release_at)
         lots[lot.name]['throughput'] += 1
@@ -91,3 +94,9 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
             'machines': machines,
             'plugins': plugins,
         }, f)
+
+    # df = pd.DataFrame(data=lots)
+    # #delayed = pd.DataFrame(data=dl)
+    # df.plot()
+    # #delayed.plot()
+    # plt.show()

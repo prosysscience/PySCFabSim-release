@@ -46,4 +46,5 @@ def PPO():
 
 
 if __name__ == '__main__':
-    PPO()
+    #PPO()
+    greedy()
