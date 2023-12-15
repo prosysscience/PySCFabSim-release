@@ -111,31 +111,6 @@ def get_lots_to_dispatch_by_lot(instance, current_time, dispatcher):
         return setup_machine, build_batch(lots[setup_batch], lots[setup_batch + 1:])
     return min_run_break_machine, build_batch(lots[min_run_break_batch], lots[min_run_break_batch + 1:])
 
-def printDayWatcher(dayWatcher, WIPWatcher):
-    
-        df = pd.DataFrame(dayWatcher)
-        for column in [ "Input","Output", "On_Time", "Late", "Early"]:
-            plt.plot(df["Day"], df[column], label=column)
-
-        # Fläche unter den Linien einfärben
-        for column in ["Input","Output", "On_Time", "Late", "Early"]:
-            plt.fill_between(df["Day"], df[column], alpha=0.2)
-
-        # Achsentitel und Legende hinzufügen
-        plt.xlabel("Day")
-        plt.ylabel("Anzahl")
-        plt.legend()
-
-        # Diagramm anzeigen
-        plt.show()
-
-        df2= pd.DataFrame(WIPWatcher)
-        plt.plot(df2["Day"], df2["WIP"], label="WIP")
-        plt.xlabel("Day")
-        plt.ylabel("Anzahl")
-        plt.legend()
-        plt.show()
-
 
 def run_greedy():
     p = argparse.ArgumentParser()
@@ -173,19 +148,6 @@ def run_greedy():
     instance = FileInstance(files, run_to, l4m, plugins)
 
     dispatcher = dispatcher_map[a.dispatcher]
-    dayWatcher = {
-            "Day": [],
-            "Input": [],
-            "Output": [],
-            "On_Time": [],
-            "Late": [],
-            "Early": [],
-        }
-    
-    WIPWatcher = {
-        "Day": [],
-        "WIP": [],
-    }
 
     sys.stderr.write('Starting simulation with dispatching rule\n\n')
     sys.stderr.flush()
@@ -212,34 +174,8 @@ def run_greedy():
             else:
                 instance.dispatch(machine, lots)
 
-        if int(instance.current_time_days) % 1 == 0:
-            if int(instance.current_time_days) in dayWatcher["Day"]:
-                continue
-            dayWatcher["Day"].append(instance.current_time_days)
-            input_count = len(instance.active_lots) + len(instance.dispatchable_lots) + len(instance.done_lots)
-            dayWatcher["Input"].append(input_count)
-            dayWatcher["Output"].append(len(instance.done_lots))
-            on_time_counter = 0
-            late_counter = 0
-            early_counter = 0
-            for lot in instance.done_lots:
-                if lot.done_at < lot.deadline_at:
-                    early_counter += 1
-                elif lot.done_at > lot.deadline_at:
-                    late_counter += 1
-                else:
-                    on_time_counter += 1
-            dayWatcher["On_Time"].append(on_time_counter)
-            dayWatcher["Late"].append(late_counter)
-            dayWatcher["Early"].append(early_counter)
-
-            if int(instance.current_time_days) in WIPWatcher["Day"]:
-                continue
-            WIPWatcher["Day"].append(instance.current_time_days)
-            WIPWatcher["WIP"].append((len(instance.active_lots) + len(instance.dispatchable_lots))-len(instance.done_lots))
-
     instance.finalize()
     interval = datetime.now() - start_time
     print(instance.current_time_days, ' days simulated in ', interval)
     print_statistics(instance, a.days, a.dataset, a.dispatcher, method='greedy_seed' + str(a.seed))
-    printDayWatcher(dayWatcher, WIPWatcher)
+    
