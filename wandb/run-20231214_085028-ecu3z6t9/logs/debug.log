@@ -1,0 +1,33 @@
+2023-12-14 08:50:28,574 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2023-12-14 08:50:28,574 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Configure stats pid to 7524
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Loading settings from C:\Users\willi\.config\wandb\settings
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Loading settings from C:\Users\willi\Desktop\PySCFabSim-release\wandb\settings
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': 'c:\\Users\\willi\\Desktop\\PySCFabSim-release\\main.py', 'program': 'c:\\Users\\willi\\Desktop\\PySCFabSim-release\\main.py'}
+2023-12-14 08:50:28,575 INFO    MainThread:7524 [wandb_init.py:_log_setup():524] Logging user logs to C:\Users\willi\Desktop\PySCFabSim-release\wandb\run-20231214_085028-ecu3z6t9\logs\debug.log
+2023-12-14 08:50:28,576 INFO    MainThread:7524 [wandb_init.py:_log_setup():525] Logging internal logs to C:\Users\willi\Desktop\PySCFabSim-release\wandb\run-20231214_085028-ecu3z6t9\logs\debug-internal.log
+2023-12-14 08:50:28,576 INFO    MainThread:7524 [wandb_init.py:init():564] calling init triggers
+2023-12-14 08:50:28,576 INFO    MainThread:7524 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-12-14 08:50:28,576 INFO    MainThread:7524 [wandb_init.py:init():614] starting backend
+2023-12-14 08:50:28,576 INFO    MainThread:7524 [wandb_init.py:init():618] setting up manager
+2023-12-14 08:50:28,579 INFO    MainThread:7524 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2023-12-14 08:50:28,582 INFO    MainThread:7524 [wandb_init.py:init():624] backend started and connected
+2023-12-14 08:50:28,588 INFO    MainThread:7524 [wandb_init.py:init():716] updated telemetry
+2023-12-14 08:50:28,639 INFO    MainThread:7524 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-12-14 08:50:29,513 INFO    MainThread:7524 [wandb_run.py:_on_init():2254] communicating current version
+2023-12-14 08:50:30,118 INFO    MainThread:7524 [wandb_run.py:_on_init():2263] got version response 
+2023-12-14 08:50:30,118 INFO    MainThread:7524 [wandb_init.py:init():800] starting run threads in backend
+2023-12-14 08:50:30,281 INFO    MainThread:7524 [wandb_run.py:_console_start():2233] atexit reg
+2023-12-14 08:50:30,281 INFO    MainThread:7524 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-12-14 08:50:30,281 INFO    MainThread:7524 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-12-14 08:50:30,281 INFO    MainThread:7524 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-12-14 08:50:30,282 INFO    MainThread:7524 [wandb_init.py:init():841] run started, returning control to user process
+2023-12-14 09:35:53,831 INFO    MainThread:7524 [wandb_run.py:_finish():1962] finishing run s80423/PySCFabSim-release/ecu3z6t9
+2023-12-14 09:35:53,831 INFO    MainThread:7524 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2023-12-14 09:35:53,832 INFO    MainThread:7524 [wandb_run.py:_restore():2185] restore
+2023-12-14 09:35:53,832 INFO    MainThread:7524 [wandb_run.py:_restore():2191] restore done
+2023-12-14 09:36:01,227 INFO    MainThread:7524 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-14 09:36:01,229 INFO    MainThread:7524 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-14 09:36:01,255 INFO    MainThread:7524 [wandb_run.py:_footer_sync_info():3796] logging synced files
