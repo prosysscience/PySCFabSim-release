@@ -1,3 +1,13 @@
 .idea/
 venv/
 *.pyc
+wandb/
+greedy/
+datasets/Vergleichstools/
+logs/
+differences.json
+Vergleich.py
+Test.py
+.json
+.txt
+```
