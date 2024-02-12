@@ -97,13 +97,21 @@ class FileInstance(Instance):
             if distribution is None:
                 distribution = ne
             if a['FOAUNITS'] == '':
-                for m in m_break:
+                for num,m in enumerate(m_break):
                     m.piece_per_maintenance.append(ne.c)
-                    m.pieces_until_maintenance.append(a['FOA'])
+                    if a['FOADIST']=='constant':
+                        foa_sample = a['FOA']/len(m_break)
+                        spec_foa = foa_sample*(num+1)
+                        m.pieces_until_maintenance.append(spec_foa)
                     m.maintenance_time.append(le)
             else:
-                for m in m_break:
-                    br = BreakdownEvent(distribution.sample(), le, ne, m, is_breakdown)
+                for num,m in enumerate(m_break):
+                    if a['FOADIST']=='constant':
+                        dist_sample = (distribution.sample())/len(m_break)
+                        spec_dist = dist_sample*(num+1)
+                        br = BreakdownEvent(spec_dist, le, ne, m, is_breakdown)
+                    else:
+                        br = BreakdownEvent(distribution.sample(), le, ne, m, is_breakdown)
                     if not is_breakdown:
                         m.pms.append(br)
                     breakdowns.append(br)
