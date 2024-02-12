@@ -194,7 +194,7 @@ class Instance:
                 setup_time = 0
         else:
             setup_time = 0
-        if new_setup in self.setup_min_run:
+        if new_setup in self.setup_min_run and machine.min_runs_left is None and setup_time > 0:
             machine.min_runs_left = self.setup_min_run[new_setup]
             machine.min_runs_setup = new_setup
             machine.has_min_runs = True
