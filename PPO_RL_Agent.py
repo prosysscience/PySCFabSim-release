@@ -62,34 +62,21 @@ def main():
 
     for i in range(n_games):
         state = env.reset()
-        state = state[4:]
-        print("state wihtout 4", state)
         score = 0
         done = False
         
         while not done:
-            #state = np.array(state)
-            #action, prob, val = agent.choose_action(state)
+            state = state[4:]
+            #print("state wihtout 4", state)
             actions = 9
             one_length = len(state) // actions
-            # descending = True
             index = 0
-            # sortable = []
+            
             available_actions = []
             for i in range(actions):
                 available_actions.append((state[one_length * i + index] != -1000))
-            print("available_actions", available_actions)
-                
-            #sortable.sort(reverse=descending)
-            
-            #### Old Version without Critic ####
-            #sortable = np.array([element[0] for element in sortable])
-            
-            #action = sortable[0][1]
+            #print("available_actions", available_actions)
 
-            #### New Version with Critic ####
-            
-            #sortable_array = np.array(sortable, dtype=float)
             action, prob, val = agent.choose_action(state, available_actions)
             if available_actions[action] == False:
                 print("Der Agtent hat eine illigale Entscheidung getroffen!!!")
@@ -105,7 +92,7 @@ def main():
             score += reward
             agent.remember(state, action,prob, val, reward, done)
             if n_steps % N == 0:
-                agent.learn()
+                agent.learn(available_actions)
                 learn_iters += 1
             state = state_
         score_history.append(score)

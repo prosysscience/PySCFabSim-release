@@ -72,6 +72,10 @@ class ActorNetwork(nn.Module):
 
     def forward(self, state, availableActionSpace):
         dist = self.actor(state)                # state in -> probs out
+        # if len(availableActionSpace) > 0:
+        #     ava = True
+        # else:
+        #     ava = False
         ava = availableActionSpace > 0
         inv = ~ava
        
@@ -216,7 +220,8 @@ class Agent:
  
         return action, probs, value
 
-    def learn(self):
+    def learn(self, available_actions):
+        availableActionSpace = T.tensor([available_actions], dtype=T.float).to(self.actor.device)
         for _ in range(self.n_epochs):
             state_arr, action_arr, old_prob_arr, vals_arr,\
             reward_arr, dones_arr, batches = \
@@ -241,7 +246,7 @@ class Agent:
                 old_probs = T.tensor(old_prob_arr[batch]).to(self.actor.device)
                 actions = T.tensor(action_arr[batch]).to(self.actor.device)
 
-                dist = self.actor(states)
+                dist = self.actor(states, availableActionSpace)
                 critic_value = self.critic(states)
 
                 critic_value = T.squeeze(critic_value)

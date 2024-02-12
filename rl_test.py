@@ -43,7 +43,7 @@ def main():
     while True:
         
         action, _states = model.predict(obs, deterministic=deterministic)
-        print("action", action)
+        #print("action", action)
         # if ranag:
         #     if ranag == 'random':
         #         action = env.action_space.sample()
