@@ -66,10 +66,19 @@ class BreakdownEvent:
                 plugin.on_breakdown(instance, self)
             else:
                 plugin.on_preventive_maintenance(instance, self)
-        instance.add_event(BreakdownEvent(
-            self.timestamp + length + self.repeat_interval.sample(),
+        if self.is_breakdown:
+            instance.add_event(BreakdownEvent(
+            self.timestamp + length+ self.repeat_interval.sample(), 
             self.length,
             self.repeat_interval,
             self.machine,
             self.is_breakdown,
         ))
+        else:
+                instance.add_event(BreakdownEvent(
+                    self.timestamp + self.repeat_interval.sample(), # Autosced DOKU! -> In der MTBPM Zeit ist die Dauer des PMs enthalten 
+                    self.length,
+                    self.repeat_interval,
+                    self.machine,
+                    self.is_breakdown,
+                ))
