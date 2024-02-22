@@ -109,9 +109,9 @@ class FileInstance(Instance):
                     if a['FOADIST']=='constant':
                         dist_sample = (distribution.sample())/len(m_break)
                         spec_dist = dist_sample*(num+1)
-                        br = BreakdownEvent(spec_dist, le, ne, m, is_breakdown)
+                        br = BreakdownEvent(spec_dist, le, ne, m, is_breakdown, spec_dist)
                     else:
-                        br = BreakdownEvent(distribution.sample(), le, ne, m, is_breakdown)
+                        br = BreakdownEvent(distribution.sample(), le, ne, m, is_breakdown, 0)
                     if not is_breakdown:
                         m.pms.append(br)
                     breakdowns.append(br)

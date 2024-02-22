@@ -53,6 +53,7 @@ class BreakdownEvent:
         self.length = length
         if not is_breakdown:
             machine.next_preventive_maintenance = timestamp
+        self.unaffected_timestamp = unaffected_timestamp
 
     def handle(self, instance):
         length = self.length.sample()
@@ -73,12 +74,15 @@ class BreakdownEvent:
             self.repeat_interval,
             self.machine,
             self.is_breakdown,
+            0
         ))
         else:
+                new_timestamp = self.unaffected_timestamp + self.repeat_interval.sample()
                 instance.add_event(BreakdownEvent(
-                    self.timestamp + self.repeat_interval.sample(), # Autosced DOKU! -> In der MTBPM Zeit ist die Dauer des PMs enthalten 
+                    new_timestamp, # Autosced DOKU! -> In der MTBPM Zeit ist die Dauer des PMs enthalten 
                     self.length,
                     self.repeat_interval,
                     self.machine,
                     self.is_breakdown,
+                    new_timestamp
                 ))
