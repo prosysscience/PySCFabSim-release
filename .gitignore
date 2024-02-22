@@ -9,5 +9,5 @@ differences.json
 Vergleich.py
 Test.py
 .json
-.txt
+*.txt
 ```
