@@ -38,6 +38,7 @@ class Instance:
         self.done_lots: List[Lot] = []
 
         self.events = EventQueue()
+        #self.pmsbd = defaultdict(lambda: {'PM_count':0,'PM_in_std': 0 ,'BD_count':0, 'BD_in_std': 0})        
 
         self.current_time = 0
 
