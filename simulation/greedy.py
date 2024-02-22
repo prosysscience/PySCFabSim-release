@@ -187,6 +187,7 @@ def run_greedy():
     a.dataset = "SMT2020_HVLM"
     a.days = 730
     a.dispatcher = "fifo"
+    #a.seed = 42
 
     sys.stderr.write('Loading ' + a.dataset + ' for ' + str(a.days) + ' days, using ' + a.dispatcher + '\n')
     sys.stderr.flush()
@@ -239,4 +240,11 @@ def run_greedy():
     interval = datetime.now() - start_time
     print(instance.current_time_days, ' days simulated in ', interval)
     print_statistics(instance, a.days, a.dataset, a.dispatcher, method='greedy_seed' + str(a.seed))
+    # filename = 'pmbr_log.txt'
     
+    # with open(filename, 'w') as file:
+    #     titel = 'Maschine\tPM_count\tPM_in_std\tBD_count\tBD_in_std\n'
+    #     file.write(f'{titel}\n\n')
+    #     for machine in sorted(list(instance.pmsbd.keys())):
+    #         if instance.pmsbd[machine]['PM_count'] > 0:
+    #             file.write(str(machine) + "\t" + str(instance.pmsbd[machine]['PM_count']) + "\t" + str(instance.pmsbd[machine]['PM_in_std'])+"\t"+str(instance.pmsbd[machine]['BD_count']) + "\t" + str(instance.pmsbd[machine]['BD_in_std']) + "\n")

@@ -61,6 +61,8 @@ class BreakdownEvent:
             self.machine.bred_time += length
         else:
             self.machine.pmed_time += length
+           # instance.pmsbd[self.machine.idx]['PM_count'] += 1
+          #  instance.pmsbd[self.machine.idx]['PM_in_std'] += length / 60 /60
         instance.handle_breakdown(self.machine, length)
         for plugin in instance.plugins:
             if self.is_breakdown:
