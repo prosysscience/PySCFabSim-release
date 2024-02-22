@@ -186,13 +186,13 @@ class Instance:
         new_setup = lots[0].actual_step.setup_needed
         if new_setup != '' and machine.current_setup != new_setup:
             if lots[0].actual_step.setup_time is not None:
-                setup_time = lots[0].actual_step.setup_time
+                setup_time = lots[0].actual_step.setup_time             # SetupTime für in der Route geplante Setups
             elif (machine.current_setup, new_setup) in setups:
-                setup_time = setups[(machine.current_setup, new_setup)]
+                setup_time = setups[(machine.current_setup, new_setup)] # SetupTime für in setup.txt für DE_BE_ Maschinen
             elif ('', new_setup) in setups:
-                setup_time = setups[('', new_setup)]
+                setup_time = setups[('', new_setup)]                    # SetupTime für in setup.txt für Implant_91/128/131
             else:
-                setup_time = 0
+                setup_time = 0                                          # SetupTime, wenn in DE_BE kein Setup vorhanden ist
         else:
             setup_time = 0
         if new_setup in self.setup_min_run and machine.min_runs_left is None and setup_time > 0:
@@ -219,7 +219,7 @@ class Instance:
 
     def handle_breakdown(self, machine, delay):
         ta = []
-        for ev in machine.events:
+        for ev in machine.events: # nur Events mit LoteDone oder MachineDone werden verschoben
             if ev in self.events.arr:
                 ta.append(ev)
                 self.events.remove(ev)
