@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.7",
+    "heartbeatAt": "2023-12-14T07:54:30.517332",
+    "startedAt": "2023-12-14T07:54:28.667621",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb"
+    ],
+    "state": "running",
+    "program": "c:\\Users\\willi\\Desktop\\PySCFabSim-release\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/spooferHD/PySCFabSim-release.git",
+        "commit": "e124e98e3ac62a15c7efd4935f11a24eb00645e3"
+    },
+    "email": "s80423@htw-dresden.de",
+    "root": "C:/Users/willi/Desktop/PySCFabSim-release",
+    "host": "DESKTOP-1VE504R",
+    "username": "willi",
+    "executable": "C:\\Users\\willi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3200.0,
+        "min": 0.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3200.0,
+            "min": 0.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 930.8718452453613,
+            "used": 436.87451934814453
+        }
+    },
+    "memory": {
+        "total": 15.946453094482422
+    }
+}
