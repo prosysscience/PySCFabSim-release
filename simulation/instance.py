@@ -1,5 +1,7 @@
 from collections import defaultdict
 from typing import Dict, List, Set, Tuple
+import os
+import csv
 
 from classes import Machine, Route, Lot
 from dispatching.dm_lot_for_machine import LotForMachineDispatchManager
@@ -57,15 +59,38 @@ class Instance:
     @property
     def current_time_days(self):
         return self.current_time / 3600 / 24
-
-    def next_step(self):
+    
+    def process_until_calc(self):
         process_until = []
         if len(self.events.arr) > 0:
             process_until.append(max(0, self.events.first.timestamp))
         process_until.append(max(0, self.dispatchable_lots[0].release_at))
-        process_until = min(process_until)
+        return min(process_until)
+    
+    def move_event(self, ev):
+        temp_time = 0
+        for ev_m in ev.machine.events:
+            if ev_m.timestamp > temp_time:
+                temp_time = ev_m.timestamp
+                
+        delay = temp_time  - ev.timestamp     
+        ev.timestamp += delay
+        self.add_event(ev)
+
+
+    def next_step(self):
+        process_until = self.process_until_calc()
         while len(self.events.arr) > 0 and self.events.first.timestamp <= process_until:
             ev = self.events.pop_first()
+            # if "BreakdownEvent" in str(ev) and ev.is_breakdown != True:
+            #     if len(ev.machine.events) == 0:
+            #         self.current_time = max(0, ev.timestamp, self.current_time)
+            #         # print(f'Time stamp {self.current_time}')
+            #         ev.handle(self)
+            #     else: 
+            #         self.move_event(ev)
+            #         process_until = self.process_until_calc()
+            # else:
             self.current_time = max(0, ev.timestamp, self.current_time)
             # print(f'Time stamp {self.current_time}')
             ev.handle(self)
