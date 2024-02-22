@@ -25,6 +25,9 @@ class UniformDistribution:
 
     def avg(self):
         return self.m
+    
+    def max(self):
+        return self.m + self.l / 2
 
 
 class ConstantDistribution:
@@ -37,6 +40,9 @@ class ConstantDistribution:
 
     def avg(self):
         return self.c
+    
+    def max(self):
+        return self.c
 
 
 class ExponentialDistribution:
@@ -46,6 +52,9 @@ class ExponentialDistribution:
 
     def sample(self):
         return r.random.expovariate(1 / self.p)
+    
+    def max(self):
+        return self.p
 
 
 def get_distribution(typ, unit, *args, multiplier=1):
