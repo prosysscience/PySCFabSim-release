@@ -59,16 +59,24 @@ class BreakdownEvent:
         length = self.length.sample()
         if self.is_breakdown:
             self.machine.bred_time += length
+          #  instance.pmsbd[self.machine.idx]['BD_count'] += 1
+           # instance.pmsbd[self.machine.idx]['BD_in_std'] += length / 60 /60
         else:
             self.machine.pmed_time += length
            # instance.pmsbd[self.machine.idx]['PM_count'] += 1
           #  instance.pmsbd[self.machine.idx]['PM_in_std'] += length / 60 /60
+        
+            #instance.handle_pm(self.machine, length, self)
         instance.handle_breakdown(self.machine, length)
         for plugin in instance.plugins:
             if self.is_breakdown:
                 plugin.on_breakdown(instance, self)
             else:
                 plugin.on_preventive_maintenance(instance, self)
+        # wenn erste PM nach FOA-Wartung -> nimm Intervall/2
+        # Aufteilung in PM und Breaktdown
+                #Bei Brakdown + lenght ins neue Event
+        
         if self.is_breakdown:
             instance.add_event(BreakdownEvent(
             self.timestamp + length+ self.repeat_interval.sample(), 
@@ -79,6 +87,7 @@ class BreakdownEvent:
             0
         ))
         else:
+                #hier von der geplanten Zeit ausgehen, nicht von der Verschiebung
                 new_timestamp = self.unaffected_timestamp + self.repeat_interval.sample()
                 instance.add_event(BreakdownEvent(
                     new_timestamp, # Autosced DOKU! -> In der MTBPM Zeit ist die Dauer des PMs enthalten 
