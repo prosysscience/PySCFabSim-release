@@ -43,7 +43,7 @@ class ReleaseEvent:
 
 class BreakdownEvent:
 
-    def __init__(self, timestamp, length, repeat_interval, machine, is_breakdown):
+    def __init__(self, timestamp, length, repeat_interval, machine, is_breakdown, unaffected_timestamp=0):
         self.timestamp = timestamp
         self.machine = machine
         self.machines = []
