@@ -42,7 +42,7 @@ class WandBPlugin(IPlugin):
 
     def on_sim_done(self, instance):
         self.step(instance, force=True)
-        columns = ['lot name', 'in progress', 'completed', 'completed on time', 'on time percent', 'average cycle time',
+        columns = ['lot name', 'in progress', 'completed', 'completed on time', 'completed to early', 'on time percent', 'average cycle time',
                    'theoretical processing time']
 
         groups = defaultdict(lambda: defaultdict(lambda: 0))
@@ -50,8 +50,10 @@ class WandBPlugin(IPlugin):
             groups[lot.name]['in progress'] += 1
         for lot in instance.done_lots:
             groups[lot.name]['completed'] += 1
-            if lot.done_at <= lot.deadline_at:
+            if lot.done_at == lot.deadline_at:
                 groups[lot.name]['completed on time'] += 1
+            elif lot.done_at < lot.deadline_at:
+                groups[lot.name]['completed to early'] += 1
             groups[lot.name]['on time percent'] = round(
                 groups[lot.name]['completed on time'] / groups[lot.name]['completed'] * 100, 2)
             groups[lot.name]['act_sum'] += lot.done_at - lot.release_at
