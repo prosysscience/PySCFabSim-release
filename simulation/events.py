@@ -97,3 +97,19 @@ class BreakdownEvent:
                     self.is_breakdown,
                     new_timestamp
                 ))
+    
+
+    def handle_timebased_pm(self, instance):
+        time = self.length.sample()
+        self.machine.pmed_time += time
+
+        new_timestamp = self.unaffected_timestamp + self.repeat_interval.sample()
+        instance.add_event(BreakdownEvent(
+            new_timestamp, # Autosced DOKU! -> In der MTBPM Zeit ist die Dauer des PMs enthalten 
+            self.length,
+            self.repeat_interval,
+            self.machine,
+            self.is_breakdown,
+            new_timestamp
+        ))
+        return time
