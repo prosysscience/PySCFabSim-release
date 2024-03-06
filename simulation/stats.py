@@ -13,7 +13,7 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
     from instance import Instance
     instance: Instance
     lot: Lot
-    lots = defaultdict(lambda: {'ACT': [], 'throughput_one_year': 0 , 'throughput': 0, 'on_time': 0, 'tardiness': 0, 'waiting_time': 0,
+    lots = defaultdict(lambda: {'ACT': [], 'throughput_one_year': 0 , 'throughput': 0, 'on_time': 0, 'tardiness': 0,'early_tardiness':0, 'waiting_time': 0,
                                 'processing_time': 0, 'transport_time': 0, 'waiting_time_batching': 0})
     apt = {}
     dl = {}
@@ -24,6 +24,7 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
             lots[lot.name]['throughput_one_year'] += 1
             lots[lot.name]['ACT'].append(lot.done_at - lot.release_at)
             lots[lot.name]['tardiness'] += max(0, lot.done_at - lot.deadline_at)
+            lots[lot.name]['early_tardiness'] += max(0, lot.deadline_at - lot.done_at)
             lots[lot.name]['waiting_time'] += lot.waiting_time
             lots[lot.name]['waiting_time_batching'] += lot.waiting_time_batching
             lots[lot.name]['processing_time'] += lot.processing_time
@@ -33,7 +34,7 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
             if lot.name not in apt:
                 apt[lot.name] = sum([s.processing_time.avg() for s in lot.processed_steps])
                 dl[lot.name] = lot.deadline_at - lot.release_at
-    print('Lot', 'APT', 'DL', 'ACT', 'TH', 'ONTIME', 'tardiness', 'wa', 'pr', 'tr')
+    print('Lot', 'APT', 'DL', 'ACT', 'TH', 'ONTIME', 'tardiness', 'early_tardiness', 'wa', 'pr', 'tr')
     acts = []
     ths = []
     ontimes = []
@@ -51,7 +52,7 @@ def print_statistics(instance, days, dataset, disp, method='greedy', dir='greedy
         pr = lots[lot_name]['processing_time'] / l['throughput_one_year'] / 3600 / 24
         tr = lots[lot_name]['transport_time'] / l['throughput_one_year'] / 3600 / 24
         print(lot_name, round(apt[lot_name] / 3600 / 24, 1), round(dl[lot_name] / 3600 / 24, 1), round(avg, 1), th,
-              ontime, l['tardiness'], wa, wab, pr, tr)
+              ontime, l['tardiness'], l['early_tardiness'], wa, wab, pr, tr)
     print('---------------')
     print(round(statistics.mean(acts), 2), statistics.mean(ths), statistics.mean(ontimes))
     print(round(sum(acts), 2), sum(ths), sum(ontimes))

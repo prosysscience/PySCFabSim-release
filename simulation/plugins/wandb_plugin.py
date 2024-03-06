@@ -42,7 +42,7 @@ class WandBPlugin(IPlugin):
 
     def on_sim_done(self, instance):
         self.step(instance, force=True)
-        columns = ['lot name', 'in progress', 'completed', 'completed on time', 'completed to early', 'on time percent', 'average cycle time',
+        columns = ['lot name', 'in progress', 'completed', 'completed on time', 'on time percent', 'average cycle time',
                    'theoretical processing time']
 
         groups = defaultdict(lambda: defaultdict(lambda: 0))
@@ -50,10 +50,8 @@ class WandBPlugin(IPlugin):
             groups[lot.name]['in progress'] += 1
         for lot in instance.done_lots:
             groups[lot.name]['completed'] += 1
-            if lot.done_at == lot.deadline_at:
+            if lot.done_at <= lot.deadline_at:
                 groups[lot.name]['completed on time'] += 1
-            elif lot.done_at < lot.deadline_at:
-                groups[lot.name]['completed to early'] += 1
             groups[lot.name]['on time percent'] = round(
                 groups[lot.name]['completed on time'] / groups[lot.name]['completed'] * 100, 2)
             groups[lot.name]['act_sum'] += lot.done_at - lot.release_at
@@ -128,8 +126,9 @@ class WandBPlugin(IPlugin):
                 'machines/avg_run_per_setup': statistics.mean(self.wandb_avg_steps_after_setup),
                 'machines/avg_run_per_setup_for_enforced': statistics.mean(self.wandb_avg_steps_after_setup_2),
                 'machines/avg_run_per_setup_NOT_enforced': statistics.mean(self.wandb_avg_steps_after_setup_1),
-                'lots/done_in_time': len([l for l in instance.done_lots if l.done_at <= l.deadline_at]),
+                'lots/done_in_time': len([l for l in instance.done_lots if l.done_at == l.deadline_at]),
                 'lots/done_late': len([l for l in instance.done_lots if l.done_at > l.deadline_at]),
+                'lots/done_early': len([l for l in instance.done_lots if l.done_at < l.deadline_at]),
                 'lots/cqt_violations': self.wandb_cqt_violations,
             })
             self.wandb_lots_already_done = len(instance.done_lots)
