@@ -170,6 +170,16 @@ class Instance:
                 machine_time += s
                 machine.pieces_until_maintenance[i] = machine.piece_per_maintenance[i]
                 machine.pmed_time += s
+        # compute timebased preventive maintenance requirement
+        look_ahead_time = self.current_time + machine_time + setup_time
+        for event in self.events.arr:
+            if "BreakdownEvent" in str(event) and event.is_breakdown == False and event.machine.idx == machine.idx and event.timestamp <= look_ahead_time:
+                self.events.remove(event)
+                s = event.handle_timebased_pm(self)
+                machine_time += s
+            if event.timestamp > look_ahead_time:
+                    break
+
         # if there is ltl dedication, dedicate lot for selected step
         for lot in lots:
             if lot.actual_step.lot_to_lens_dedication is not None:
