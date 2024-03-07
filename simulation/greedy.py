@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.join('C:/','Users','willi','OneDrive','Documents','Studium','Diplomarbeit','Programm + Datengrundlage','PySCFabSim-release','simulation'))
+sys.path.append(os.path.join('data','horse','ws','wiro085f-WsRodmann','Final_Version','PySCFabSim', 'simulation'))
 
 from collections import defaultdict
 from datetime import datetime
@@ -162,9 +163,6 @@ def get_lots_to_dispatch_by_machine(instance, ptuple_fcn, machine=None):
     #if machine.min_runs_left is not None and machine.min_runs_setup != lots[0].actual_step.setup_needed: # Test 5
         lots = None
     
-    
-        
-        
     return machine, lots
 
 
