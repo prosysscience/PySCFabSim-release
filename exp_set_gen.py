@@ -8,13 +8,13 @@ if not os.path.exists(root):
     mkdir(root)
 
 stngrps = [
-    "<Diffusion_FE_100>",
+    "<TF_BE_40>",
 ]
 
 for seed in [0]:
     for dataset, dispatcher in [('HVLM', 'fifo')]:
         for action_count in [9]:
-            for training_period in [365 ]:
+            for training_period in [730]:
                 for reward in [2]:
                     for stngrp in stngrps:
                         case_name = f'{seed}_ds_{dataset}_a{action_count}_tp{training_period}_reward{reward}_di_{dispatcher}_{str(stngrp)[:2]}'
