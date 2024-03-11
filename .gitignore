@@ -10,4 +10,5 @@ Vergleich.py
 Test.py
 .json
 *.txt
+experiments/
 ```
