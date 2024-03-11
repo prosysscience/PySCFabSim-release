@@ -3,9 +3,11 @@ import io
 import json
 import os
 from sys import argv, stdout
+import sys
 
 from stable_baselines3 import PPO
-
+sys.path.append(os.path.join('C:/','Users','willi','OneDrive','Documents','Studium','Diplomarbeit','Programm + Datengrundlage','PySCFabSim-release','simulation'))
+sys.path.append(os.path.join('data','horse','ws','wiro085f-WsRodmann','Final_Version','PySCFabSim', 'simulation'))
 from simulation.gym.environment import DynamicSCFabSimulationEnvironment
 from simulation.gym.sample_envs import DEMO_ENV_1
 from simulation.stats import print_statistics
@@ -13,6 +15,7 @@ from simulation.stats import print_statistics
 
 def main():
     print("Starting Test")
+    wandb = True
     testing_days = 365 * 2
     t = datetime.datetime.now()
     #ranag = 'random' in argv[2]
@@ -28,9 +31,14 @@ def main():
     #args = dict(seed=0, num_actions=config['action_count'], active_station_group=config['station_group'], days=testing_days,
     #            dataset='SMT2020_' + config['dataset'], dispatcher=config['dispatcher'], reward_type=config['reward'])
     
-    env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, max_steps=1000000000)
+    
+    plugins = []
+    if wandb:
+        from plugins.wandb_plugin import WandBPlugin
+        plugins.append(WandBPlugin())
+    env = DynamicSCFabSimulationEnvironment(**DEMO_ENV_1, **args, max_steps=1000000000, plugins=plugins)
     obs = env.reset()
-    print("obs", obs)
+    #print("obs", obs)
     reward = 0
 
     checkpoints = [180, 365, testing_days]
@@ -44,25 +52,26 @@ def main():
         
         action, _states = model.predict(obs, deterministic=deterministic)
         #print("action", action)
-        # if ranag:
-        #     if ranag == 'random':
-        #         action = env.action_space.sample()
-        #     else:
-        #         state = obs[4:]
-        #         print("State", state)
-        #         actions = config['action_count']
-        #         one_length = len(state) // actions
-        #         print("one_length", one_length)
-        #         descending = True
-        #         index = 0
-        #         sortable = []
-        #         for i in range(actions):
-        #             sortable.append((state[one_length * i + index], i))
-        #         sortable.sort(reverse=descending)
-        #         print("sortable", sortable)
-        #         action = sortable[0][1]
+        if ranag:
+            if ranag == 'random':
+                action = env.action_space.sample()
+            else:
+                state = obs[4:]
+                #print("State", state)
+                actions = config['action_count']
+                one_length = len(state) // actions
+                #print("one_length", one_length)
+                descending = True
+                index = 0
+                sortable = []
+                for i in range(actions):
+                    sortable.append((state[one_length * i + index], i))
+                sortable.sort(reverse=descending)
+                #print("sortable", sortable)
+                action = sortable[0][1]
         #         print("action",action)
         obs, r, done, info = env.step(action)
+       # print("obs", obs)   
         if r < 0:
             deterministic = False
         else:
