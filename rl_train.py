@@ -34,7 +34,8 @@ def main():
                 sys.stderr.write(f'\r{self.num_timesteps} / {to_train} {perc}% {round(remaining, 2)} hours left    {env.instance.current_time_days}      ')
             return super().on_step()
 
-    fn = argv[1]
+    #fn = argv[1]
+    fn = "experiments/0_ds_HVLM_a9_tp730_reward2_di_fifo_TF\config.json"
     with open(fn, 'r') as config:
         p = json.load(config)['params']
     args = dict(num_actions=p['action_count'], active_station_group=p['station_group'],
